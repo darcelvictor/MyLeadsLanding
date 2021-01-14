@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Banner from "../components/Banner"
-import MaPrimRenov from "../images/svg/maPrimRenov.inline.svg"
 import { Container } from "../components/Container/ContainerElements"
 import CheckList from "../components/CheckList"
 import Separator from "../components/Separator"
@@ -35,14 +34,15 @@ const IndexPage = () => (
       </h1>
       <CheckList data={data.firstCheckList} color="white" />
       <MyForm />
-      <MaPrimRenov style={{ marginLeft: "auto", marginRight: "auto" }} />
+    </Container>
+    <Container>
+      <FirstSection />
       <CheckList
         data={data.secondCheckList}
         color="#676666"
         TitleColor="#707070"
       />
     </Container>
-    <FirstSection />
   </Layout>
 )
 
