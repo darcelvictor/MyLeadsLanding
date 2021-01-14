@@ -1,16 +1,11 @@
 import styled from "styled-components"
 import { pxToRem, colors } from "../../theme/helpers"
 
-const borderRadiusTop = (radius = 10) => {
-  return ` border-top-right-radius: ${pxToRem(radius)};
-  border-top-left-radius: ${pxToRem(radius)};`
-}
-
 const marginInForm = (marginHeight = 0, marginWidth = 15) => {
   return `margin: ${pxToRem(marginHeight)} ${pxToRem(marginWidth)};`
 }
 export const FormContainer = styled.section`
-  ${borderRadiusTop()}
+  border-radius: ${pxToRem(10)};
   background-color: white;
   padding-top: 0;
   box-shadow: 0 6px 19px 0 rgba(0, 0, 0, 0.16);
@@ -23,7 +18,8 @@ export const FormContainer = styled.section`
 `
 
 export const FormHeader = styled.h2`
-  ${borderRadiusTop()}
+  border-top-right-radius: ${pxToRem(10)};
+  border-top-left-radius: ${pxToRem(10)};
   color: white;
   background-color: ${colors.green};
   width: 100%;
@@ -46,25 +42,17 @@ export const FormPresentation = styled.p`
   padding: ${pxToRem(10)} ${pxToRem(15)};
 `
 export const FormTitle = styled.h3`
-  ${marginInForm()}
   color: ${colors.blue};
   font-weight: 800;
   font-size: ${pxToRem(18)};
   background-color: white;
-`
-export const FormSeparator = styled.div`
-  padding: 0 ${pxToRem(15)} ${pxToRem(15)};
-  width: 100%;
-  align-self: flex-start;
-  div {
-    background-color: ${colors.blue};
-    width: 100%;
-    height: 1px;
-  }
+  border-bottom: 1px solid ${colors.blue};
+  margin-bottom: ${pxToRem(5)};
+  margin-top: ${pxToRem(10)};
 `
 
 export const Form = styled.form`
-  padding: 0 ${pxToRem(15)};
+  padding: 0 ${pxToRem(15)} ${pxToRem(15)};
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -87,18 +75,40 @@ export const Label = styled.label`
     border: solid 1px rgba(59, 180, 244, 0.76);
     background-color: rgba(206, 238, 255, 0.18);
   }
-  div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    div {
-      display: flex;
-      justify-content: center;
-      width: 50%;
-      p {
-        color: ${colors.blue};
-      }
-    }
-  }
+`
+export const SemiContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+`
+
+export const Semi = styled.div`
+  width: 48%;
+`
+export const BoldGreenText = styled.p`
+  margin: ${pxToRem(10)};
+  font-family: Raleway;
+  font-size: ${pxToRem(23)};
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0fd344;
+`
+export const LegalText = styled.p`
+  margin: ${pxToRem(15)} 0 0;
+  font-family: Roboto;
+  font-size: ${pxToRem(11)};
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
 `

@@ -25,7 +25,7 @@ export const layout = (px = 1170) => {
 }
 
 export const Accent = styled.span`
-  color: ${colors.green};
+  color: ${colors.green}!important;
 `
 
 const sizes = {

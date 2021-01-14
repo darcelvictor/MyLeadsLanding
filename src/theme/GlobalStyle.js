@@ -33,7 +33,8 @@ h1,h2,h3,h4
 }
 p{
   font-family: Roboto;
-  color:${colors.lightGrey}
+  color:${colors.lightGrey};
+  margin : 1rem 0 0;
 }
 
 button{
@@ -47,6 +48,59 @@ button{
   font-size : ${pxToRem(24)};
   margin: 0 auto;
 }
+/* ------FORM-------*/
+.checkBox{
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  margin : 1rem 0 0;
+  label{
+    display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  min-width:150px;
+  input{
+    max-width:30px;
+  }
+  }
+  * {
+    font-family: Raleway;
+  font-size: ${pxToRem(18)};
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: ${colors.blue};
+  margin:0;
+  }
+}
+.rgpd{
+  display:flex;
+  margin: ${pxToRem(15)} 0;
+  flex-direction:row;
+  input{
+    max-width:40px;
+    left:0;
+  }
+  p{
+    margin:0;
+    padding:0;
+    font-family: Raleway;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #07448e;
+    span{
+      font-weight:bold;
+    }
+  }
+  }
 `
 
 export default Global

@@ -8,8 +8,11 @@ import {
   FormHeader,
   FormPresentation,
   FormTitle,
-  FormSeparator,
   Label,
+  SemiContainer,
+  Semi,
+  BoldGreenText,
+  LegalText,
 } from "./FormElements"
 
 function encode(data) {
@@ -49,10 +52,6 @@ const MyForm = () => {
         Pour obtenir une réponse parfaitement adaptée à votre situation,
         veuillez renseigner l’ensemble des champs suivants :
       </FormPresentation>
-      <FormTitle>Votre Logement</FormTitle>
-      <FormSeparator>
-        <div></div>
-      </FormSeparator>
       <Form
         name="contact"
         method="post"
@@ -69,64 +68,36 @@ const MyForm = () => {
             <input name="bot-field" onChange={handleChange} />
           </Label>
         </p>
-        <Label>
-          Type de bien concerné :<Accent>*</Accent>
-          <br />
-          <div>
-            <div>
-              <p>Maison</p>
-              <input
-                type="radio"
-                name="houseType"
-                value="Maison"
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <p>Appartement</p>
-              <input
-                type="radio"
-                name="houseType"
-                value="Appartement"
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-        </Label>
-        <Label>
-          Dans ce logement, vous êtes :<Accent>*</Accent>
-          <br />
-          <div>
-            <div>
-              <p>Propriétaire</p>
-              <input
-                type="radio"
-                name="proprity"
-                value="owner"
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <p>Locataire</p>
-              <input
-                type="radio"
-                name="proprity"
-                value="tenant"
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-        </Label>
+        <FormTitle>Votre Logement</FormTitle>
         <p>
-          <Label>
+          <Label name="type-de-bien">
+            Type de bien concerné :<Accent>*</Accent>
+            <br />
+            <select id="type-de-bien" required>
+              <option value="">--Sélectionner une option--</option>
+              <option value="Appartement">Appartement</option>
+              <option value="Maison">Maison</option>
+              <option value="Bureaux">Bureaux</option>
+            </select>
+          </Label>
+        </p>
+        <p>
+          <Label name="propriétaire">
+            Dans ce logement, vous êtes :<Accent>*</Accent>
+            <br />
+            <select id="Propriétaire" required>
+              <option value="">--Sélectionner une option--</option>
+              <option value="Propiétaire">Propiétaire</option>
+              <option value="Locataire">Locataire</option>
+            </select>
+          </Label>
+        </p>
+        <p>
+          <Label name="chauffage">
             Votre type de chauffage actuel :<Accent>*</Accent>
             <br />
-            <select id="pet-select" required>
-              <option value="">--Sélectionner un type de chauffage--</option>
+            <select id="chauffage" required>
+              <option value="">--Sélectionner une option--</option>
               <option value="Gaz">Gaz</option>
               <option value="electrique">Électrique</option>
               <option value="Bois">Bois</option>
@@ -136,11 +107,11 @@ const MyForm = () => {
           </Label>
         </p>
         <p>
-          <Label>
+          <Label name="surface">
             Surface habitable de votre logement :<Accent>*</Accent>
             <br />
-            <select id="pet-select" required>
-              <option value="">--Sélectionner votre surface--</option>
+            <select id="surface" required>
+              <option value="">--Sélectionner une option--</option>
               <option value="50/100">entre 50 et 100m2</option>
               <option value="100/150">entre 100 et 150m2</option>
               <option value="150/200">entre 150 et 200m2</option>
@@ -148,54 +119,129 @@ const MyForm = () => {
             </select>
           </Label>
         </p>
-        <Label>
-          Civilté :<Accent>*</Accent>
-          <br />
-          <div>
-            <div>
-              <p>Monsieur</p>
-              <input
-                type="radio"
-                name="gender"
-                value="Monsieur"
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div>
-              <p>Madame</p>
-              <input
-                type="radio"
-                name="gender"
-                value="madame"
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
+        <p>
+          <Label>
+            Montant de votre facture mensuelle de chauffage :<Accent>*</Accent>
+            <br />
+            <input type="number" name="name" onChange={handleChange} required />
+          </Label>
+        </p>
+        <SemiContainer>
+          <Semi>
+            <p>
+              <Label>
+                Ville / Village :<Accent>*</Accent>
+                <br />
+                <input
+                  type="text"
+                  name="ville"
+                  onChange={handleChange}
+                  required
+                />
+              </Label>
+            </p>
+          </Semi>
+          <Semi>
+            <p>
+              <Label>
+                Code postal :<Accent>*</Accent>
+                <br />
+                <input
+                  type="number"
+                  name="code-postal"
+                  onChange={handleChange}
+                  required
+                />
+              </Label>
+            </p>
+          </Semi>
+        </SemiContainer>
+        <FormTitle>Vos informations de contact</FormTitle>
+        <div className="checkBox">
+          <p>
+            Civilité :<Accent>*</Accent>
+          </p>
+          <Label name="sexe">
+            <input
+              type="radio"
+              name="gender"
+              value="madame"
+              onChange={handleChange}
+              required
+            />
+            <p>Madame</p>
+          </Label>
+          <Label name="sexe">
+            <input
+              type="radio"
+              name="gender"
+              value="Monsieur"
+              onChange={handleChange}
+              required
+            />
+            <p>Monsieur</p>
+          </Label>
+        </div>
+        <SemiContainer>
+          <Semi>
+            <p>
+              <Label>
+                Nom :<Accent>*</Accent>
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  onChange={handleChange}
+                  required
+                />
+              </Label>
+            </p>
+          </Semi>
+          <Semi>
+            <p>
+              <Label>
+                Prénom :<Accent>*</Accent>
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  onChange={handleChange}
+                  required
+                />
+              </Label>
+            </p>
+          </Semi>
+        </SemiContainer>
+        <p>
+          <Label>
+            Votre numéro de téléphone :<Accent>*</Accent>
+            <br />
+            <input type="tel" name="phone" onChange={handleChange} required />
+          </Label>
+        </p>
+        <p>
+          <Label>
+            Votre adresse e-mail :<Accent>*</Accent>
+            <br />
+            <input type="email" name="email" onChange={handleChange} required />
+          </Label>
+        </p>
+        <Label className="rgpd">
+          <input type="radio" onChange={handleChange} required />
+          <p>
+            <span>Accord RGPD : </span>J’autorise le site de mon-eco-habitat à
+            conserver et utiliser mes données personnelles pour le traitement de
+            ma demande. Ces données peuvent êtres supprimées à ma demande.
+          </p>
         </Label>
-        <p>
-          <Label>
-            Nom :
-            <br />
-            <input type="text" name="name" onChange={handleChange} />
-          </Label>
-        </p>
-        <p>
-          <Label>
-            téléphone :
-            <br />
-            <input type="phone" name="phone" onChange={handleChange} />
-          </Label>
-        </p>
-        <p>
-          <Label>
-            Votre adresse e-mail :
-            <br />
-            <input type="email" name="email" onChange={handleChange} />
-          </Label>
-        </p>
         <button type="submit">Validé ma demande &#10003;</button>
+        <BoldGreenText>Gratuit et sans engagement</BoldGreenText>
+        <LegalText>
+          Vos informations sont strictement confidentielles et peuvent être
+          supprimées à tout moment. En validant le formulaire, vous acceptez
+          d’être contacté pour obtenir des conseils personnalisés. Pour plus
+          d’informations consultez notre politique de confidentialité.
+        </LegalText>
       </Form>
     </FormContainer>
   )
