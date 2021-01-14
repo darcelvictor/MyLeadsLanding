@@ -185,21 +185,21 @@ const MyForm = () => {
           <p>
             Civilité :<Accent>*</Accent>
           </p>
-          <Label name="civilité">
+          <Label>
             <input
               type="radio"
-              name="Mme"
-              value="madame"
+              name="civilité"
+              value="Mme"
               onChange={handleChange}
               required
             />
             <p>Madame</p>
           </Label>
-          <Label name="gender">
+          <Label>
             <input
               type="radio"
-              name="M"
-              value="Monsieur"
+              name="civilité"
+              value="M"
               onChange={handleChange}
               required
             />

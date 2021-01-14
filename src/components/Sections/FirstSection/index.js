@@ -1,13 +1,23 @@
-// import React from "react"
-// import { MyImage } from "./FirstSectionElements"
-// import Wallet from "../../../images/svg/wallet.svg"
+import React from "react"
+import { MyImage, MyText, Container } from "./FirstSectionElements"
+import Wallet from "../../../images/svg/wallet.svg"
+//import data from "../../../theme/data"
 
-// // const Item = ({ image, txt }) => {
-// //   return <MyImage />
-// // }
+const Item = ({ txt, image = Wallet }) => {
+  return (
+    <div>
+      <MyImage src={image} />
+      <MyText>{txt}</MyText>
+    </div>
+  )
+}
 
-// const FirstSection = () => {
-//   return "test"
-// }
+const FirstSection = () => {
+  return (
+    <Container>
+      <Item txt="test" />
+    </Container>
+  )
+}
 
-// export default FirstSection
+export default FirstSection
