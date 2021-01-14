@@ -53,12 +53,16 @@ button{
   display:inline-flex;
   flex-direction:row;
   align-items:center;
+  flex-wrap:wrap;
   margin : 1rem 0 0;
+  p{
+    min-width:71px;
+  }
   label{
     display:inline-flex;
   flex-direction:row;
   align-items:center;
-  min-width:150px;
+  min-width:120px;
   input{
     max-width:30px;
   }
