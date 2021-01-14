@@ -1,11 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import { pxToRem, colors } from "../../../theme/helpers"
+import { pxToRem, colors } from "../../theme/helpers"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const CTA = ({ className, children }) => {
   return (
     <div className={className}>
-      <btn>{children}</btn>
+      <button onClick={() => scrollTo("form")}>{children}</button>
       <p>Demande gratuite et sans engagement.</p>
     </div>
   )
@@ -15,6 +16,18 @@ export default styled(CTA)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  button {
+    font-family: Raleway;
+    font-size: ${pxToRem(27)};
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: ${pxToRem(10)} ${pxToRem(20)};
+  }
   p {
     margin-top: ${pxToRem(10)};
     font-family: Roboto;

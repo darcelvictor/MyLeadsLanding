@@ -14,6 +14,7 @@ import { FirstSection } from "../components/Sections"
 import { Footer1, Footer2 } from "../components/Sections/Footers"
 
 import data from "../theme/data"
+import CTA from "../components/CTA"
 
 const IndexPage = () => (
   <Layout>
@@ -43,6 +44,7 @@ const IndexPage = () => (
         color="#676666"
         TitleColor="#707070"
       />
+      <CTA>TEST D’éligibilité &#8593;</CTA>
     </Container>
     <footer>
       <Footer1 />
