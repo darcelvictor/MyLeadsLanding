@@ -18,7 +18,6 @@ export const pxToRem = (px = 16) => {
 export const layout = (px = 1170) => {
   return `
     max-width: ${pxToRem(px)};
-    width: 95vw;
     margin-left: auto;
     margin-right: auto;
     padding: 0 ${pxToRem(8)};`

@@ -21,8 +21,9 @@ export const Container = styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
   div {
-    padding: ${pxToRem(30)};
+    padding: ${pxToRem(30)} 0;
     max-width: 95%;
     display: flex;
     align-items: center;
