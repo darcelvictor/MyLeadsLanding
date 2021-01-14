@@ -77,7 +77,7 @@ const MyForm = () => {
           <Label name="type-de-bien">
             Type de bien concerné :<Accent>*</Accent>
             <br />
-            <select id="type-de-bien" onBlur={handleChange} required>
+            <select id="type-de-bien" onChange={handleChange} required>
               <option value="">--Sélectionner une option--</option>
               <option value="Appartement">Appartement</option>
               <option value="Maison">Maison</option>
@@ -89,7 +89,7 @@ const MyForm = () => {
           <Label name="propriétaire">
             Dans ce logement, vous êtes :<Accent>*</Accent>
             <br />
-            <select id="Propriétaire" onBlur={handleChange} required>
+            <select id="Propriétaire" onChange={handleChange} required>
               <option value="">--Sélectionner une option--</option>
               <option value="Propiétaire">Propiétaire</option>
               <option value="Locataire">Locataire</option>
@@ -100,7 +100,7 @@ const MyForm = () => {
           <Label name="chauffage">
             Votre type de chauffage actuel :<Accent>*</Accent>
             <br />
-            <select id="chauffage" onBlur={handleChange} required>
+            <select id="chauffage" onChange={handleChange} required>
               <option value="">--Sélectionner une option--</option>
               <option value="Gaz">Gaz</option>
               <option value="electrique">Électrique</option>
@@ -114,7 +114,7 @@ const MyForm = () => {
           <Label name="surface">
             Surface habitable de votre logement :<Accent>*</Accent>
             <br />
-            <select id="surface" onBlur={handleChange} required>
+            <select id="surface" name="surface" onBlur={handleChange} required>
               <option value="">--Sélectionner une option--</option>
               <option value="50/100">entre 50 et 100m2</option>
               <option value="100/150">entre 100 et 150m2</option>
@@ -127,7 +127,7 @@ const MyForm = () => {
           <Label>
             Montant de votre facture mensuelle de chauffage :<Accent>*</Accent>
             <br />
-            <input type="number" name="name" onBlur={handleChange} required />
+            <input type="number" name="name" onChange={handleChange} required />
           </Label>
         </p>
         <SemiContainer>
@@ -231,7 +231,7 @@ const MyForm = () => {
           </Label>
         </p>
         <Label className="rgpd">
-          <input type="checkbox" onChange={handleChange} required />
+          <input type="checkbox" name="rgpd" onChange={handleChange} required />
           <p>
             <span>Accord RGPD : </span>J’autorise le site de mon-eco-habitat à
             conserver et utiliser mes données personnelles pour le traitement de
