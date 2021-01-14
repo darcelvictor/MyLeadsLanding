@@ -1,8 +1,8 @@
 import React from "react"
-// import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
+import Image from "../components/image"
 import SEO from "../components/seo"
 
 import Banner from "../components/Banner"
@@ -39,13 +39,18 @@ const IndexPage = () => (
     </Container>
     <Container>
       <FirstSection />
+      <CTA fontSize={23}>je test mon éligibilité</CTA>
       <CheckList
         data={data.secondCheckList}
         color="#676666"
         TitleColor="#707070"
       />
-      <CTA>TEST D’éligibilité &#8593;</CTA>
+
+      <CTA fontSize={27}>TEST D’éligibilité &#8593;</CTA>
     </Container>
+    <div style={{ maxWidth: `600px`, margin: `1.45rem 0` }}>
+      <Image />
+    </div>
     <footer>
       <Footer1 />
       <Footer2 />

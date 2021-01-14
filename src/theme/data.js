@@ -3,20 +3,20 @@ import Wallet from "../images/svg/wallet.svg"
 export default {
   firstCheckList: [
     {
-      id: 1,
+      id: 11,
       title: "Divisez par 3 votre facture d’énergie ",
     },
     {
-      id: 2,
+      id: 12,
       title: "Améliorez votre confort et valorisez votre maison",
     },
     {
-      id: 3,
+      id: 13,
       title:
         "Un seul appareil pour tous vos besoins : chauffage en hiver et climatisation en été",
     },
     {
-      id: 4,
+      id: 14,
       title: "Une pose simple et rapide",
     },
   ],
@@ -69,6 +69,26 @@ export default {
       id: 33,
       image: Wallet,
       text: "Plus de 70% d’économies sur votre facture",
+    },
+  ],
+  ListNumber: [
+    {
+      id: 1,
+      title: "Captation de l’énergie naturelle et gratuite",
+      text:
+        "La pompe à chaleur capte les calories présentes naturellement dans l’air extérieur. Une énergie gratuite et inépuisable.",
+    },
+    {
+      id: 2,
+      title: "Répartition de l’énergie dans toute la maison",
+      text:
+        "Les calories sont transformées en énergie et alimentent votre système de chauffage dans tout votre habitat.",
+    },
+    {
+      id: 3,
+      title: "Une température agréable toute l’année ",
+      text:
+        "La pompe à chaleur diffuse un air purifié et vous apporte une température stable tout au long de l’année, été comme hiver.",
     },
   ],
 }

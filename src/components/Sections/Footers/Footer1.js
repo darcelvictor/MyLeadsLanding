@@ -26,6 +26,7 @@ export default styled(Footer1)`
   text-align: center;
   p {
     font-family: Roboto;
+    margin-top: 0;
     font-size: ${pxToRem(16)};
     font-weight: 400;
     font-stretch: normal;
