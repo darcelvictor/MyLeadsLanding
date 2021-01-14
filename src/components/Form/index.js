@@ -165,7 +165,7 @@ const MyForm = () => {
           <p>
             Civilité :<Accent>*</Accent>
           </p>
-          <Label name="sexe">
+          <Label name="gender">
             <input
               type="radio"
               name="gender"
@@ -175,7 +175,7 @@ const MyForm = () => {
             />
             <p>Madame</p>
           </Label>
-          <Label name="sexe">
+          <Label name="gender">
             <input
               type="radio"
               name="gender"
