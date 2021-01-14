@@ -9,10 +9,11 @@ import Banner from "../components/Banner"
 import MaPrimRenov from "../images/svg/maPrimRenov.inline.svg"
 import { Container } from "../components/Container/ContainerElements"
 import CheckList from "../components/CheckList"
-
-import data from "../theme/data"
 import Separator from "../components/Separator"
 import MyForm from "../components/Form"
+import { FirstSection } from "../components/Sections"
+
+import data from "../theme/data"
 
 const IndexPage = () => (
   <Layout>
@@ -34,13 +35,14 @@ const IndexPage = () => (
       </h1>
       <CheckList data={data.firstCheckList} color="white" />
       <MyForm />
+      <MaPrimRenov style={{ marginLeft: "auto", marginRight: "auto" }} />
       <CheckList
         data={data.secondCheckList}
         color="#676666"
         TitleColor="#707070"
       />
-      <MaPrimRenov style={{ marginLeft: "auto", marginRight: "auto" }} />
     </Container>
+    <FirstSection />
   </Layout>
 )
 

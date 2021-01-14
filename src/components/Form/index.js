@@ -79,7 +79,7 @@ const MyForm = () => {
             <br />
             <select
               id="type-de-bien"
-              name="local"
+              name="typeDhabitat"
               onBlur={handleChange}
               required
             >
@@ -96,7 +96,7 @@ const MyForm = () => {
             <br />
             <select
               id="Propriétaire"
-              name="property"
+              name="Situation"
               onBlur={handleChange}
               required
             >
@@ -107,12 +107,12 @@ const MyForm = () => {
           </Label>
         </p>
         <p>
-          <Label name="chauffage">
+          <Label>
             Votre type de chauffage actuel :<Accent>*</Accent>
             <br />
             <select
               id="chauffage"
-              name="chauffage-Type"
+              name="typeChauffage"
               onBlur={handleChange}
               required
             >
@@ -126,10 +126,10 @@ const MyForm = () => {
           </Label>
         </p>
         <p>
-          <Label name="surface">
+          <Label>
             Surface habitable de votre logement :<Accent>*</Accent>
             <br />
-            <select id="surface" name="surface" onBlur={handleChange} required>
+            <select id="surface" name="Surface" onBlur={handleChange} required>
               <option value="">--Sélectionner une option--</option>
               <option value="50/100">entre 50 et 100m2</option>
               <option value="100/150">entre 100 et 150m2</option>
@@ -144,7 +144,7 @@ const MyForm = () => {
             <br />
             <input
               type="number"
-              name="invoice"
+              name="MontantFacture"
               onChange={handleChange}
               required
             />
@@ -172,7 +172,7 @@ const MyForm = () => {
                 <br />
                 <input
                   type="number"
-                  name="code-postal"
+                  name="codePostal"
                   onChange={handleChange}
                   required
                 />
@@ -185,10 +185,10 @@ const MyForm = () => {
           <p>
             Civilité :<Accent>*</Accent>
           </p>
-          <Label name="gender">
+          <Label name="civilité">
             <input
               type="radio"
-              name="gender"
+              name="Mme"
               value="madame"
               onChange={handleChange}
               required
@@ -198,7 +198,7 @@ const MyForm = () => {
           <Label name="gender">
             <input
               type="radio"
-              name="gender"
+              name="M"
               value="Monsieur"
               onChange={handleChange}
               required
@@ -214,7 +214,7 @@ const MyForm = () => {
                 <br />
                 <input
                   type="text"
-                  name="name"
+                  name="prenom"
                   onChange={handleChange}
                   required
                 />
@@ -228,7 +228,7 @@ const MyForm = () => {
                 <br />
                 <input
                   type="text"
-                  name="name"
+                  name="nom"
                   onChange={handleChange}
                   required
                 />
@@ -240,14 +240,19 @@ const MyForm = () => {
           <Label>
             Votre numéro de téléphone :<Accent>*</Accent>
             <br />
-            <input type="tel" name="phone" onChange={handleChange} required />
+            <input
+              type="tel"
+              name="telephone"
+              onChange={handleChange}
+              required
+            />
           </Label>
         </p>
         <p>
           <Label>
             Votre adresse e-mail :<Accent>*</Accent>
             <br />
-            <input type="email" name="email" onChange={handleChange} required />
+            <input type="eMail" name="email" onChange={handleChange} required />
           </Label>
         </p>
         <Label className="rgpd">
