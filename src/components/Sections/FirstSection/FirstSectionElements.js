@@ -23,7 +23,7 @@ export const Container = styled.div`
   align-items: center;
   div {
     padding: ${pxToRem(30)};
-    max-width: 50%;
+    max-width: 95%;
     display: flex;
     align-items: center;
     flex-direction: column;
