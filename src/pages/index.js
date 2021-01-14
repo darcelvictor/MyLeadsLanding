@@ -11,6 +11,7 @@ import CheckList from "../components/CheckList"
 import Separator from "../components/Separator"
 import MyForm from "../components/Form"
 import { FirstSection } from "../components/Sections"
+import { Footer1, Footer2 } from "../components/Sections/Footers"
 
 import data from "../theme/data"
 
@@ -43,6 +44,10 @@ const IndexPage = () => (
         TitleColor="#707070"
       />
     </Container>
+    <footer>
+      <Footer1 />
+      <Footer2 />
+    </footer>
   </Layout>
 )
 
