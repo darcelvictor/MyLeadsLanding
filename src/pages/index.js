@@ -42,7 +42,7 @@ const IndexPage = () => (
         TitleColor="#707070"
       />
     </Container>
-    <FirstSection />
+    {/* <FirstSection /> */}
   </Layout>
 )
 

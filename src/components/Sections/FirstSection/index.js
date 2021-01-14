@@ -1,10 +1,13 @@
-import React from "react"
-import {MyImage} from "./FirstSectionElements"
+// import React from "react"
+// import { MyImage } from "./FirstSectionElements"
+// import Wallet from "../../../images/svg/wallet.svg"
 
-const Item = ({image,txt}) => {
-  return (
-      <MyImage scr={} alt=/>
-  )
-}
+// // const Item = ({ image, txt }) => {
+// //   return <MyImage />
+// // }
 
-export default Item
+// const FirstSection = () => {
+//   return "test"
+// }
+
+// export default FirstSection
