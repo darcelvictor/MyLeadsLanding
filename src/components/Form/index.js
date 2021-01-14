@@ -74,10 +74,15 @@ const MyForm = () => {
         </p>
         <FormTitle>Votre Logement</FormTitle>
         <p>
-          <Label name="type-de-bien">
+          <Label>
             Type de bien concerné :<Accent>*</Accent>
             <br />
-            <select id="type-de-bien" onChange={handleChange} required>
+            <select
+              id="type-de-bien"
+              name="local"
+              onBlur={handleChange}
+              required
+            >
               <option value="">--Sélectionner une option--</option>
               <option value="Appartement">Appartement</option>
               <option value="Maison">Maison</option>
@@ -86,10 +91,15 @@ const MyForm = () => {
           </Label>
         </p>
         <p>
-          <Label name="propriétaire">
+          <Label>
             Dans ce logement, vous êtes :<Accent>*</Accent>
             <br />
-            <select id="Propriétaire" onChange={handleChange} required>
+            <select
+              id="Propriétaire"
+              name="property"
+              onBlur={handleChange}
+              required
+            >
               <option value="">--Sélectionner une option--</option>
               <option value="Propiétaire">Propiétaire</option>
               <option value="Locataire">Locataire</option>
@@ -100,7 +110,12 @@ const MyForm = () => {
           <Label name="chauffage">
             Votre type de chauffage actuel :<Accent>*</Accent>
             <br />
-            <select id="chauffage" onChange={handleChange} required>
+            <select
+              id="chauffage"
+              name="chauffage-Type"
+              onBlur={handleChange}
+              required
+            >
               <option value="">--Sélectionner une option--</option>
               <option value="Gaz">Gaz</option>
               <option value="electrique">Électrique</option>
@@ -127,7 +142,12 @@ const MyForm = () => {
           <Label>
             Montant de votre facture mensuelle de chauffage :<Accent>*</Accent>
             <br />
-            <input type="number" name="name" onChange={handleChange} required />
+            <input
+              type="number"
+              name="invoice"
+              onChange={handleChange}
+              required
+            />
           </Label>
         </p>
         <SemiContainer>
