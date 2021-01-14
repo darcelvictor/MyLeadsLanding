@@ -8,7 +8,7 @@ const Separator = ({ className }) => {
 
 export default styled(Separator)`
   min-width: ${pxToRem(170)};
-  width: 30vw;
+  width: 30%;
   height: 0;
   margin: 0 auto;
   border-top: solid 5px ${colors.green};
