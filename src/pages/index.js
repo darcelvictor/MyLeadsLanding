@@ -25,7 +25,7 @@ const IndexPage = () => (
     <Section1 />
     <Section2 />
     <Section3 />
-    <div style={{ maxWidth: `600px`, margin: `0 0` }}>
+    <div id="HomeImage" style={{ maxWidth: `600px`, margin: `0 0` }}>
       <Image />
     </div>
     <Section4 />

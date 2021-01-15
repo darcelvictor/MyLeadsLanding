@@ -10,7 +10,7 @@ const Section5 = () => {
   return (
     <Container style={{ backgroundColor: colors.BKgrey }}>
       <MyH2>votre pompe à chaleur en 3 étapes</MyH2>
-      <ListNumberUnderLine />
+      <ListNumberUnderLine className="listContainer" />
     </Container>
   )
 }

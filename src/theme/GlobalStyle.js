@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import { pxToRem, colors } from "./helpers"
+import { pxToRem, colors, media } from "./helpers"
 
 import "sanitize.css"
 import "sanitize.css/forms.css"
@@ -130,6 +130,14 @@ button{
       font-weight:bold;
     }
   }
+  }
+
+
+  /* ------photo page d'acceuil-------*/
+  #HomeImage{
+    ${media.small`
+    display:none;
+    `}
   }
 `
 

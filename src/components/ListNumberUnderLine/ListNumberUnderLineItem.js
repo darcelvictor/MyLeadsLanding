@@ -20,8 +20,12 @@ const ListNumberUnderlineItem = ({ nb, title, text, className }) => {
 export default styled(ListNumberUnderlineItem)`
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   margin: ${pxToRem(40)};
+  background-color: white;
+  padding: ${pxToRem(15)};
+  border-radius: ${pxToRem(31)};
   p:first-of-type {
     font-family: Arial;
     font-size: ${pxToRem(50)};
@@ -33,6 +37,7 @@ export default styled(ListNumberUnderlineItem)`
     text-align: center;
     color: ${colors.blue};
     text-align: center;
+    margin: 0;
   }
   h3 {
     font-family: Raleway;

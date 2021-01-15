@@ -16,9 +16,9 @@ export const pxToRem = (px = 16) => {
   return `${px / 16}rem`
 }
 
-export const layout = (px = 1170) => {
+export const layout = (px = 1500) => {
   return `
-    max-width: ${pxToRem(px)};
+    max-width: ${pxToRem(1500)};
     margin-left: auto;
     margin-right: auto;
     padding: 0 ${pxToRem(8)};`
@@ -29,6 +29,7 @@ export const Accent = styled.span`
 `
 
 const sizes = {
+  xlarge: 1400,
   large: 1200,
   medium: 900,
   small: 600,

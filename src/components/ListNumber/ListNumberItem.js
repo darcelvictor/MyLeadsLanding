@@ -33,7 +33,7 @@ export default styled(ListNumberItem)`
     justify-content: center;
   }
   h3 {
-    margin-top: 0;
+    margin: 0;
     font-family: Raleway;
     font-size: ${pxToRem(23)};
     font-weight: bold;
@@ -45,6 +45,7 @@ export default styled(ListNumberItem)`
     color: ${colors.blue};
     grid-column: 2;
     grid-row: 1;
+    align-self: center;
   }
   p {
     font-family: Roboto;

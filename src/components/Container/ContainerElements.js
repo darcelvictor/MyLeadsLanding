@@ -9,3 +9,5 @@ export const Container = styled.section`
   padding-right: ${pxToRem(27)};
   padding-left: ${pxToRem(27)};
 `
+
+// export default Container

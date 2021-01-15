@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 
 import Banner from "../../Banner"
 import { Container } from "../../Container/ContainerElements"
@@ -8,16 +9,15 @@ import MyForm from "../../Form"
 import { FirstP } from "./Section1Elements"
 import MaPrimRenov from "../../../images/svg/maPrimRenov.inline.svg"
 
+import { colors, pxToRem, media } from "../../../theme/helpers"
+
 import data from "../../../theme/data"
 
-const Section1 = () => {
+import BackgroundImage from "gatsby-background-image"
+
+const Section1 = ({ className }) => {
   return (
-    <Container
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, #4a74ff, rgba(69, 151, 186, 0.75) 51%, rgba(24, 145, 184, 0.51) 88%, rgba(255, 255, 255, 0.51))",
-      }}
-    >
+    <Container className={className}>
       <Banner>
         Vous êtes propriétaire d’une maison chauffée au gaz, au fioul ou au
         charbon ?
@@ -41,4 +41,12 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default styled(Section1)`
+  background-image: linear-gradient(
+    to bottom,
+    #4a74ff,
+    rgba(69, 151, 186, 0.75) 51%,
+    rgba(24, 145, 184, 0.51) 88%,
+    rgba(255, 255, 255, 0.51)
+  );
+`
