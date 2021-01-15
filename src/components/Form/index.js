@@ -77,71 +77,88 @@ const MyForm = () => {
           </Label>
         </p>
         <FormTitle>Votre Logement</FormTitle>
-        <p>
-          <Label>
-            Type de bien concerné :<Accent>*</Accent>
-            <br />
-            <select
-              id="type-de-bien"
-              name="typeDhabitat"
-              onBlur={handleChange}
-              required
-            >
-              <option value="">--Sélectionner une option--</option>
-              <option value="Appartement">Appartement</option>
-              <option value="Maison">Maison</option>
-              <option value="Bureaux">Bureaux</option>
-            </select>
-          </Label>
-        </p>
-        <p>
-          <Label>
-            Dans ce logement, vous êtes :<Accent>*</Accent>
-            <br />
-            <select
-              id="Propriétaire"
-              name="Situation"
-              onBlur={handleChange}
-              required
-            >
-              <option value="">--Sélectionner une option--</option>
-              <option value="Propiétaire">Propiétaire</option>
-              <option value="Locataire">Locataire</option>
-            </select>
-          </Label>
-        </p>
-        <p>
-          <Label>
-            Votre type de chauffage actuel :<Accent>*</Accent>
-            <br />
-            <select
-              id="chauffage"
-              name="typeChauffage"
-              onBlur={handleChange}
-              required
-            >
-              <option value="">--Sélectionner une option--</option>
-              <option value="Gaz">Gaz</option>
-              <option value="electrique">Électrique</option>
-              <option value="Bois">Bois</option>
-              <option value="Fioul">Fioul</option>
-              <option value="Charbon">Charbon</option>
-            </select>
-          </Label>
-        </p>
-        <p>
-          <Label>
-            Surface habitable de votre logement :<Accent>*</Accent>
-            <br />
-            <select id="surface" name="Surface" onBlur={handleChange} required>
-              <option value="">--Sélectionner une option--</option>
-              <option value="50/100">entre 50 et 100m2</option>
-              <option value="100/150">entre 100 et 150m2</option>
-              <option value="150/200">entre 150 et 200m2</option>
-              <option value="+200">plus de 200m2</option>
-            </select>
-          </Label>
-        </p>
+        <SemiContainer>
+          <Semi>
+            <p>
+              <Label>
+                Type de bien concerné :<Accent>*</Accent>
+                <br />
+                <select
+                  id="type-de-bien"
+                  name="typeDhabitat"
+                  onBlur={handleChange}
+                  required
+                >
+                  <option value="">--Sélectionner une option--</option>
+                  <option value="Appartement">Appartement</option>
+                  <option value="Maison">Maison</option>
+                  <option value="Bureaux">Bureaux</option>
+                </select>
+              </Label>
+            </p>
+          </Semi>
+          <Semi>
+            <p>
+              <Label>
+                Dans ce logement, vous êtes :<Accent>*</Accent>
+                <br />
+                <select
+                  id="Propriétaire"
+                  name="Situation"
+                  onBlur={handleChange}
+                  required
+                >
+                  <option value="">--Sélectionner une option--</option>
+                  <option value="Propiétaire">Propiétaire</option>
+                  <option value="Locataire">Locataire</option>
+                </select>
+              </Label>
+            </p>
+          </Semi>
+        </SemiContainer>
+        <SemiContainer>
+          <Semi>
+            <p>
+              <Label>
+                Votre type de chauffage actuel :<Accent>*</Accent>
+                <br />
+                <select
+                  id="chauffage"
+                  name="typeChauffage"
+                  onBlur={handleChange}
+                  required
+                >
+                  <option value="">--Sélectionner une option--</option>
+                  <option value="Gaz">Gaz</option>
+                  <option value="electrique">Électrique</option>
+                  <option value="Bois">Bois</option>
+                  <option value="Fioul">Fioul</option>
+                  <option value="Charbon">Charbon</option>
+                </select>
+              </Label>
+            </p>
+          </Semi>
+          <Semi>
+            <p>
+              <Label>
+                Surface habitable de votre logement :<Accent>*</Accent>
+                <br />
+                <select
+                  id="surface"
+                  name="Surface"
+                  onBlur={handleChange}
+                  required
+                >
+                  <option value="">--Sélectionner une option--</option>
+                  <option value="50/100">entre 50 et 100m2</option>
+                  <option value="100/150">entre 100 et 150m2</option>
+                  <option value="150/200">entre 150 et 200m2</option>
+                  <option value="+200">plus de 200m2</option>
+                </select>
+              </Label>
+            </p>
+          </Semi>
+        </SemiContainer>
         <p>
           <Label>
             Montant de votre facture mensuelle de chauffage :<Accent>*</Accent>
