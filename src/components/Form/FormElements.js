@@ -31,6 +31,7 @@ export const FormHeader = styled.h2`
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
+  text-transform: none !important;
   line-height: 1.17;
 `
 export const FormPresentation = styled.p`

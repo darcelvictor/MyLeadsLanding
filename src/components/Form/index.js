@@ -50,7 +50,11 @@ const MyForm = () => {
   return (
     <FormContainer id="form">
       <FormHeader>
-        Vérifiez votre éligibilité aux aides de l’état en 1 minute !
+        Vérifiez votre éligibilité
+        <br />
+        aux aides de l’état
+        <br />
+        en 1 minute !
       </FormHeader>
       <FormPresentation>
         Pour obtenir une réponse parfaitement adaptée à votre situation,

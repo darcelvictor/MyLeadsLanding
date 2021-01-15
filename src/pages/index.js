@@ -65,6 +65,7 @@ const IndexPage = () => (
     <div style={{ maxWidth: `600px`, margin: `1.45rem 0` }}>
       <Image />
     </div>
+    {/* ----------4EME PARTIE ----------*/}
     <Container>
       <MyH2>Comment fonctionne une pompe à chaleur ?</MyH2>
       <p>
@@ -78,10 +79,12 @@ const IndexPage = () => (
       <ListNumber />
       <CTA fontSize={27}>Vérifier mon éligibilité</CTA>
     </Container>
+    {/* ----------5EME PARTIE ----------*/}
     <Container>
       <MyH2>votre pompe à chaleur en 3 étapes</MyH2>
       <ListNumberUnderLine />
     </Container>
+    {/* ----------6EME PARTIE ----------*/}
     <Container
       style={{
         backgroundImage:
@@ -123,11 +126,12 @@ const IndexPage = () => (
         financés et le montant de la prime est progressif afin de soutenir plus
         fortement les ménages qui en ont le plus besoin.
       </p>
-      <a className="link" href="www.maprimerenov.gouv.fr">
+      <a className="link" href="https://www.maprimerenov.gouv.fr">
         source : www.maprimerenov.gouv.fr
       </a>
       <CTA>Je souhaite tester mon éligibilité &#8594;</CTA>
     </Container>
+    {/* ----------7EME PARTIE ----------*/}
     <Container>
       <MaPrimRenov style={{ margin: "70 auto" }} />
     </Container>

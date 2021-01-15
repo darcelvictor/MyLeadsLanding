@@ -59,6 +59,13 @@ button{
   font-size : ${pxToRem(24)};
   margin: 0 auto;
 }
+.link{
+  text-decoration:none;
+  text-align:left;
+  align-self: flex-start;
+  color:${colors.lightGrey};
+}
+
 /* ------FORM-------*/
 .checkBox{
   display:inline-flex;
