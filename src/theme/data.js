@@ -86,9 +86,32 @@ export default {
     },
     {
       id: 3,
-      title: "Une température agréable toute l’année ",
+      title: "Une température agréable toute l’année",
       text:
         "La pompe à chaleur diffuse un air purifié et vous apporte une température stable tout au long de l’année, été comme hiver.",
+    },
+  ],
+  ListNumberUnderLine: [
+    {
+      id: 41,
+      nb: 1,
+      title: "Demande en ligne",
+      text:
+        "Réalisez votre test d’éligibilité pour connaitre le montant de votre aide",
+    },
+    {
+      id: 42,
+      nb: 2,
+      title: "Rappel d’un conseiller",
+      text:
+        "Grâce aux informations que vous avez communiquez, un conseiller vous recontacte sous 48h maximum pour vous indiquez le montant de vos aides",
+    },
+    {
+      id: 43,
+      nb: 3,
+      title: "Réalisation des travaux",
+      text:
+        "Un expert certifié RGE partenaire de Mon Éco Habitat et situé dans votre région vous installe votre pompe à chaleur. Il s’occupe de votre dossier d’aide de l’État",
     },
   ],
 }

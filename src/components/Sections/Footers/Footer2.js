@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { pxToRem } from "../../../theme/helpers"
 
-const Footer1 = ({ className }) => {
+const Footer2 = ({ className }) => {
   return (
     <div className={className}>
       <p>
@@ -12,7 +12,7 @@ const Footer1 = ({ className }) => {
   )
 }
 
-export default styled(Footer1)`
+export default styled(Footer2)`
   width: 100%;
   padding: ${pxToRem(13)} ${pxToRem(27)};
   background-color: white;

@@ -31,6 +31,17 @@ h1,h2,h3,h4
 {
   font-family: Raleway;
 }
+h2{
+  color:${colors.blue};
+  font-size: ${pxToRem(27)};
+  font-weight: 800;
+  text-align: center;
+  text-transform:uppercase;
+}
+h3{
+  color:${colors.blue};
+  font-size: ${pxToRem(23)};
+}
 p{
   font-family: Roboto;
   color:${colors.lightGrey};

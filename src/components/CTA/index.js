@@ -6,7 +6,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 const CTA = ({ className, children, fontSize }) => {
   return (
     <div className={className}>
-      <CTAButton onClick={() => scrollTo("form")} fontSize={fontSize}>
+      <CTAButton onClick={() => scrollTo("#form")} fontSize={fontSize}>
         {children}
       </CTAButton>
       <p>Demande gratuite et sans engagement.</p>
