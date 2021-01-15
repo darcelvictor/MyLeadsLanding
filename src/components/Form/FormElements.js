@@ -61,7 +61,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   font-family: Raleway;
-  font-size: ${pxToRem(18)};
+  font-size: ${pxToRem(17)};
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
