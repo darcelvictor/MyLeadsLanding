@@ -3,7 +3,7 @@ import { pxToRem, colors, layout } from "../../../theme/helpers"
 
 export const MyImage = styled.img`
   max-width: 40%;
-  padding: ${pxToRem(30)};
+  padding: ${pxToRem(10)};
 `
 export const MyText = styled.p`
   font-family: Raleway;
@@ -23,10 +23,15 @@ export const Container = styled.div`
   align-items: center;
   padding: 0;
   div {
-    padding: ${pxToRem(30)} 0;
-    max-width: 95%;
+    border-radius: ${pxToRem(30)};
+    min-height: ${pxToRem(300)};
+    padding: ${pxToRem(30)};
+    margin: ${pxToRem(5)};
+    max-width: ${pxToRem(400)};
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    background-color: rgba(46, 182, 255, 0.09);
   }
 `

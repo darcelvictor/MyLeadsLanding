@@ -189,26 +189,28 @@ const MyForm = () => {
           <p>
             Civilité :<Accent>*</Accent>
           </p>
-          <Label>
-            <input
-              type="radio"
-              name="civilité"
-              value="Mme"
-              onChange={handleChange}
-              required
-            />
-            <p>Madame</p>
-          </Label>
-          <Label>
-            <input
-              type="radio"
-              name="civilité"
-              value="M"
-              onChange={handleChange}
-              required
-            />
-            <p>Monsieur</p>
-          </Label>
+          <div>
+            <Label>
+              <input
+                type="radio"
+                name="civilité"
+                value="Mme"
+                onChange={handleChange}
+                required
+              />
+              <p>Madame</p>
+            </Label>
+            <Label>
+              <input
+                type="radio"
+                name="civilité"
+                value="M"
+                onChange={handleChange}
+                required
+              />
+              <p>Monsieur</p>
+            </Label>
+          </div>
         </div>
         <SemiContainer>
           <Semi>

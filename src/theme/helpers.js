@@ -9,6 +9,7 @@ export const colors = {
   grey: "#707070",
   blue: "#07448e",
   lightGrey: "#676666",
+  BKgrey: "#efefef",
 }
 
 export const pxToRem = (px = 16) => {

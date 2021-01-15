@@ -18,6 +18,7 @@ export default styled(CTA)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: ${pxToRem(24)};
   p {
     margin-top: ${pxToRem(10)};
     font-family: Roboto;
@@ -39,7 +40,7 @@ export const CTAButton = styled.button`
   font-style: normal;
   line-height: 1.15;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
   padding: ${pxToRem(10)} ${pxToRem(20)};
   text-transform: uppercase;

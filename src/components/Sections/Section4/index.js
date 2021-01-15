@@ -12,13 +12,16 @@ const Section4 = () => {
       <p>
         Les pompes à chaleur réversibles répondent au double objectif de
         chauffer votre habitat en hiver et d’obtenir une fraicheur agréable en
-        été. Pour fonctionner, la PAC utilise uniquement l’air ambiant et
+        été.
+      </p>
+      <p>
+        Pour fonctionner, la PAC utilise uniquement l’air ambiant et
         l’électricité afin de s’alimenter. Elle se décompose en deux modules :
         un à l’intérieur du logement et un autre à l’extérieur qui va capter
         l’air.
       </p>
       <ListNumber />
-      <CTA fontSize={27}>Vérifier mon éligibilité</CTA>
+      <CTA fontSize={25}>Vérifier mon éligibilité</CTA>
     </Container>
   )
 }

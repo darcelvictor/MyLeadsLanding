@@ -51,7 +51,7 @@ const Section6 = () => {
       <a className="link" href="https://www.maprimerenov.gouv.fr">
         source : www.maprimerenov.gouv.fr
       </a>
-      <CTA>Je souhaite tester mon éligibilité &#8594;</CTA>
+      <CTA fontSize={30}>Je souhaite tester mon éligibilité &#8594;</CTA>
     </Container>
   )
 }

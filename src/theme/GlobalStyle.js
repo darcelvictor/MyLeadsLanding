@@ -46,6 +46,7 @@ p{
   font-family: Roboto;
   color:${colors.lightGrey};
   margin : 1rem 0 0;
+  font-size: ${pxToRem(19)}
 }
 
 button{
@@ -58,25 +59,32 @@ button{
   font-weight:800;
   font-size : ${pxToRem(24)};
   margin: 0 auto;
+  text-align:center;
 }
 .link{
   text-decoration:none;
   text-align:left;
   align-self: flex-start;
   color:${colors.lightGrey};
+  font-size : ${pxToRem(17)};
+  font-weight:Bold;
+  margin-top: ${pxToRem(10)};
 }
 
 /* ------FORM-------*/
 .checkBox{
-  display:inline-flex;
-  flex-direction:row;
   align-items:center;
   flex-wrap:wrap;
   margin : 1rem 0 0;
+  display:grid;
+  grid-template-columns: 70px auto;
   p{
     min-width:71px;
+    grid-column-start: 1;
+    align-self: flex-start;
   }
   label{
+    grid-column-start: 2;
     display:inline-flex;
   flex-direction:row;
   align-items:center;

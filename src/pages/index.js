@@ -1,5 +1,4 @@
 import React from "react"
-//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,6 +17,7 @@ import {
   Section6,
 } from "../components/Sections"
 import { Footer1, Footer2 } from "../components/Sections/Footers"
+import { Container } from "../components/Container/ContainerElements"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +25,7 @@ const IndexPage = () => (
     <Section1 />
     <Section2 />
     <Section3 />
-    <div style={{ maxWidth: `600px`, margin: `1.45rem 0` }}>
+    <div style={{ maxWidth: `600px`, margin: `0 0` }}>
       <Image />
     </div>
     <Section4 />
@@ -35,8 +35,9 @@ const IndexPage = () => (
     <Section6 />
     {/* ----------7EME PARTIE ----------*/}
 
-    <MaPrimRenov style={{ margin: "70 auto" }} />
-
+    <Container>
+      <MaPrimRenov style={{ margin: "70 auto" }} />
+    </Container>
     <footer>
       <Footer1 />
       <Footer2 />
