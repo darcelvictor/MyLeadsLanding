@@ -3,14 +3,13 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Politique from "../components/Politique"
 
-const NotFoundPage = () => (
+const MentionsLegales = () => (
   <Layout>
-    <SEO title="merci" />
-    <h1>merci</h1>
-    <p>Merci nous vous recontacterons</p>
-    <Link to="/">home</Link>
+    <SEO title="Mentions Légales" />
+    <Politique />
   </Layout>
 )
 
-export default NotFoundPage
+export default MentionsLegales

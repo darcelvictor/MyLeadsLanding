@@ -1,17 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundSection from "../components/ImageBG"
+import Politique from "../components/Politique"
 
-const NotFoundPage = () => (
+const MentionsLegales = () => (
   <Layout>
-    <SEO title="merci" />
-    <BackgroundSection>
-      <h1>Sapuer</h1>
-    </BackgroundSection>
+    <SEO title="Mentions Légales" />
+    <Politique />
   </Layout>
 )
 
-export default NotFoundPage
+export default MentionsLegales

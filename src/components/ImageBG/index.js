@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
-import Fond from "../../images/svg/firstBackground.svg"
 
+import { mediaInv, media } from "../../theme/helpers"
 import BackgroundImage from "gatsby-background-image"
 
 const BackgroundSection = ({ className, children }) => {
@@ -12,7 +12,7 @@ const BackgroundSection = ({ className, children }) => {
         placeholderImage: file(relativePath: { eq: "image-pac.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
@@ -29,18 +29,22 @@ const BackgroundSection = ({ className, children }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      BackgroundImage={Fond}
     >
       {children}
     </BackgroundImage>
   )
 }
 
-// const StyledBackgroundSection = styled(BackgroundSection)`
-//   width: 100%;
-//   background-position: bottom center;
-//   background-repeat: repeat-y;
-//   background-size: cover;
-// `
+const StyledBackgroundSection = styled(BackgroundSection)`
+  width: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  ${mediaInv.small`
+  ::before,
+  ::after {
+    background-image: none !important;
+  `}
+`
 
-export default BackgroundSection
+export default StyledBackgroundSection

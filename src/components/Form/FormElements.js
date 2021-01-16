@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { pxToRem, colors } from "../../theme/helpers"
+import { pxToRem, colors, media } from "../../theme/helpers"
 
 const marginInForm = (marginHeight = 0, marginWidth = 15) => {
   return `margin: ${pxToRem(marginHeight)} ${pxToRem(marginWidth)};`
@@ -88,6 +88,24 @@ export const SemiContainer = styled.div`
 
 export const Semi = styled.div`
   width: 48%;
+`
+export const SemiContainerMed = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${media.medium`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  `}
+`
+
+export const SemiMed = styled.div`
+  width: 100%;
+  ${media.medium`
+  width:48%
+  `}
 `
 export const BoldGreenText = styled.p`
   margin: ${pxToRem(10)};

@@ -2,7 +2,7 @@ import React from "react"
 
 import CTA from "../../CTA"
 import MyH2 from "../../MyH2"
-import { Container } from "../../Container/ContainerElements"
+import Container from "../../Container/"
 import CheckList from "../../CheckList"
 
 import { pxToRem, colors } from "../../../theme/helpers"
@@ -18,7 +18,7 @@ const Section3 = () => {
     <>
       <Container>
         <CTA fontSize={23}>je test mon éligibilité</CTA>
-        <Depanneur style={{ margin: pxToRem(15) }} />
+        <Depanneur style={{ margin: pxToRem(15), maxWidth: "90%" }} />
       </Container>
       <Container style={{ backgroundColor: colors.BKgrey }}>
         <MyH2>Comment fonctionne une pompe à chaleur ?</MyH2>

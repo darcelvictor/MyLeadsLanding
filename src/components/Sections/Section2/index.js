@@ -1,6 +1,6 @@
 import React from "react"
 import Item from "./item"
-import { Container } from "../../Container/ContainerElements"
+import Container from "../../Container"
 import data from "../../../theme/data"
 import styled from "styled-components"
 import { pxToRem, media, layout } from "../../../theme/helpers"

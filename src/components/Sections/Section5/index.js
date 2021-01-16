@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container } from "../../Container/ContainerElements"
+import Container from "../../Container"
 
 import ListNumberUnderLine from "../../ListNumberUnderLine"
 import MyH2 from "../../MyH2"

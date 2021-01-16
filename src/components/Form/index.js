@@ -11,6 +11,8 @@ import {
   Label,
   SemiContainer,
   Semi,
+  SemiContainerMed,
+  SemiMed,
   BoldGreenText,
   LegalText,
 } from "./FormElements"
@@ -77,8 +79,8 @@ const MyForm = () => {
           </Label>
         </p>
         <FormTitle>Votre Logement</FormTitle>
-        <SemiContainer>
-          <Semi>
+        <SemiContainerMed>
+          <SemiMed>
             <p>
               <Label>
                 Type de bien concerné :<Accent>*</Accent>
@@ -96,8 +98,8 @@ const MyForm = () => {
                 </select>
               </Label>
             </p>
-          </Semi>
-          <Semi>
+          </SemiMed>
+          <SemiMed>
             <p>
               <Label>
                 Dans ce logement, vous êtes :<Accent>*</Accent>
@@ -114,10 +116,10 @@ const MyForm = () => {
                 </select>
               </Label>
             </p>
-          </Semi>
-        </SemiContainer>
-        <SemiContainer>
-          <Semi>
+          </SemiMed>
+        </SemiContainerMed>
+        <SemiContainerMed>
+          <SemiMed>
             <p>
               <Label>
                 Votre type de chauffage actuel :<Accent>*</Accent>
@@ -137,8 +139,8 @@ const MyForm = () => {
                 </select>
               </Label>
             </p>
-          </Semi>
-          <Semi>
+          </SemiMed>
+          <SemiMed>
             <p>
               <Label>
                 Surface habitable de votre logement :<Accent>*</Accent>
@@ -157,8 +159,8 @@ const MyForm = () => {
                 </select>
               </Label>
             </p>
-          </Semi>
-        </SemiContainer>
+          </SemiMed>
+        </SemiContainerMed>
         <p>
           <Label>
             Montant de votre facture mensuelle de chauffage :<Accent>*</Accent>

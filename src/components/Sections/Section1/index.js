@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Banner from "../../Banner"
-import { Container } from "../../Container/ContainerElements"
+import Container from "../../Container"
 import CheckList from "../../CheckList"
 import Separator from "../../Separator"
 import MyForm from "../../Form"
@@ -13,11 +13,11 @@ import { colors, pxToRem, media } from "../../../theme/helpers"
 
 import data from "../../../theme/data"
 
-import BackgroundSection from "../../ImageBG"
+import StyledBackgroundSection from "../../ImageBG"
 
 const Section1 = ({ className }) => {
   return (
-    <BackgroundSection>
+    <StyledBackgroundSection>
       <Container className={className}>
         <Banner>
           Vous êtes propriétaire d’une maison chauffée au gaz, au fioul ou au
@@ -40,7 +40,7 @@ const Section1 = ({ className }) => {
           travaux.
         </FirstP>
       </Container>
-    </BackgroundSection>
+    </StyledBackgroundSection>
   )
 }
 

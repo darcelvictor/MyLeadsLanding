@@ -44,3 +44,12 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   `
   return acc
 }, {})
+
+export const mediaInv = Object.keys(sizes).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${sizes[label] / 16}rem) {
+      ${css(...args)}
+    }
+  `
+  return acc
+}, {})

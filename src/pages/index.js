@@ -17,7 +17,7 @@ import {
   Section6,
 } from "../components/Sections"
 import { Footer1, Footer2 } from "../components/Sections/Footers"
-import { Container } from "../components/Container/ContainerElements"
+import Container from "../components/Container"
 
 const IndexPage = () => (
   <Layout>

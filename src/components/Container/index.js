@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { pxToRem } from "../../theme/helpers"
+import { pxToRem, layout } from "../../theme/helpers"
 
-export const Container = styled.section`
+const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,4 +10,4 @@ export const Container = styled.section`
   padding-left: ${pxToRem(27)};
 `
 
-// export default Container
+export default Container

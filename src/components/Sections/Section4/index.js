@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container } from "../../Container/ContainerElements"
+import Container from "../../Container/"
 import CTA from "../../CTA"
 import ListNumber from "../../ListNumber"
 import MyH2 from "../../MyH2"

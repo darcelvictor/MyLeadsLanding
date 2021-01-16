@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container } from "../../Container/ContainerElements"
+import Container from "../../Container"
 import CTA from "../../CTA"
 import MyH2 from "../../MyH2"
 import MaPrimRenov2 from "../../../images/svg/maPrimeRenov2.inline.svg"
