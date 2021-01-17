@@ -17,6 +17,9 @@ body {
   transition:600ms;
   font-family: "Raleway";
 }
+footer{
+  min-width:100%;
+}
 h1{
   font-size: ${pxToRem(24)};
   font-weight: 900;

@@ -33,6 +33,11 @@ export const FormHeader = styled.h2`
   font-style: normal;
   text-transform: none !important;
   line-height: 1.17;
+  ${media.medium`
+  br{
+    display:none;
+  }
+  `}
 `
 export const FormPresentation = styled.p`
   ${marginInForm()}

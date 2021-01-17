@@ -10,7 +10,7 @@ export default styled(GreenLine)`
   display: none;
   background-color: ${colors.green};
   height: ${pxToRem(5)};
-  width: ${pxToRem(560)};
+  width: ${pxToRem(350)};
   justify-self: flex-start;
   ${media.small`
 display:block;

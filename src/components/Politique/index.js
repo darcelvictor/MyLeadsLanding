@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Container from "../Container"
-import { layout } from "../../theme/helpers"
+import { layout, pxToRem } from "../../theme/helpers"
 
 const Politique = ({ className }) => {
   return (
@@ -561,4 +561,5 @@ const Politique = ({ className }) => {
 
 export default styled(Politique)`
   ${layout()}
+  margin:${pxToRem(50)} 0;
 `

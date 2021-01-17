@@ -16,7 +16,7 @@ export const pxToRem = (px = 16) => {
   return `${px / 16}rem`
 }
 
-export const layout = (px = 1500) => {
+export const layout = (px = 1200) => {
   return `
     max-width: ${pxToRem(1500)};
     margin-left: auto;

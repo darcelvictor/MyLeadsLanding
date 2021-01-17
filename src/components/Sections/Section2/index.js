@@ -20,7 +20,6 @@ const Section2 = ({ className }) => {
 }
 
 export default styled(Section2)`
-  ${layout}
   ${media.small`
 width:100%;
 display:flex;

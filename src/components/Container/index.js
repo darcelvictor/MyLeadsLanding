@@ -6,8 +6,9 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: ${pxToRem(27)};
-  padding-left: ${pxToRem(27)};
+  ${layout()}
 `
 
 export default Container
+// padding-right: ${pxToRem(27)};
+// padding-left: ${pxToRem(27)};

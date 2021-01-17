@@ -31,6 +31,7 @@ const IndexPage = () => (
     <Section4 />
     {/* ----------5EME PARTIE ----------*/}
     <Section5 />
+    <Section2 />
     {/* ----------6EME PARTIE ----------*/}
     <Section6 />
     {/* ----------7EME PARTIE ----------*/}

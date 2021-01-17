@@ -40,7 +40,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  ${mediaInv.small`
+  ${mediaInv.large`
   ::before,
   ::after {
     background-image: none !important;
