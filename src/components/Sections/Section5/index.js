@@ -8,10 +8,12 @@ import { colors } from "../../../theme/helpers"
 
 const Section5 = () => {
   return (
-    <Container style={{ backgroundColor: colors.BKgrey }}>
-      <MyH2>votre pompe à chaleur en 3 étapes</MyH2>
-      <ListNumberUnderLine className="listContainer" />
-    </Container>
+    <div style={{ backgroundColor: colors.BKgrey }}>
+      <Container>
+        <MyH2>votre pompe à chaleur en 3 étapes</MyH2>
+        <ListNumberUnderLine className="listContainer" />
+      </Container>
+    </div>
   )
 }
 

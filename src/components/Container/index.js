@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { pxToRem, layout } from "../../theme/helpers"
+import { layout } from "../../theme/helpers"
 
 const Container = styled.section`
   display: flex;

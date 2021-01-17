@@ -20,15 +20,17 @@ const Section3 = () => {
         <CTA fontSize={23}>je test mon éligibilité</CTA>
         <Depanneur style={{ margin: pxToRem(15), maxWidth: "90%" }} />
       </Container>
-      <Container style={{ backgroundColor: colors.BKgrey }}>
-        <MyH2>Comment fonctionne une pompe à chaleur ?</MyH2>
-        <CheckList
-          data={data.secondCheckList}
-          color={colors.blue}
-          TitleColor={colors.grey}
-        />
-        <CTA fontSize={27}>TEST D’éligibilité &#8593;</CTA>
-      </Container>
+      <div style={{ backgroundColor: colors.BKgrey }}>
+        <Container>
+          <MyH2>Comment fonctionne une pompe à chaleur ?</MyH2>
+          <CheckList
+            data={data.secondCheckList}
+            color={colors.blue}
+            TitleColor={colors.grey}
+          />
+          <CTA fontSize={27}>TEST D’éligibilité &#8593;</CTA>
+        </Container>
+      </div>
     </>
   )
 }

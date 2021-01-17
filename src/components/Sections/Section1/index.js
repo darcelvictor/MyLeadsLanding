@@ -9,7 +9,7 @@ import MyForm from "../../Form"
 import { FirstP } from "./Section1Elements"
 import MaPrimRenov from "../../../images/svg/maPrimRenov.inline.svg"
 
-import { colors, pxToRem, media, layout } from "../../../theme/helpers"
+import { pxToRem, media, layout } from "../../../theme/helpers"
 
 import data from "../../../theme/data"
 

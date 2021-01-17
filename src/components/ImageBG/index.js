@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
-import { mediaInv, media } from "../../theme/helpers"
+import { mediaInv } from "../../theme/helpers"
 import BackgroundImage from "gatsby-background-image"
 
 const BackgroundSection = ({ className, children }) => {
