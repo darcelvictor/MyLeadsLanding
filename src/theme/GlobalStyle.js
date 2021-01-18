@@ -10,7 +10,8 @@ import "@fontsource/raleway/500.css"
 import "@fontsource/raleway/800.css"
 import "@fontsource/raleway/900.css"
 
-import "@fontsource/roboto"
+import "@fontsource/roboto/300.css"
+import "@fontsource/roboto/400.css"
 
 const Global = createGlobalStyle`
 body {
