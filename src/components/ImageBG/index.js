@@ -39,7 +39,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover/ contain;
   ${mediaInv.large`
   ::before,
   ::after {

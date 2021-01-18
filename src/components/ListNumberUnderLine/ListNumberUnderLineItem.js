@@ -59,6 +59,7 @@ export default styled(ListNumberUnderlineItem)`
   }
   p {
     text-align: center;
+    align-self: center;
   }
   button {
     font-family: Raleway;

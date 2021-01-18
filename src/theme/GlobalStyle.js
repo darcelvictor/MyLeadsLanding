@@ -6,6 +6,7 @@ import "sanitize.css/forms.css"
 import "sanitize.css/typography.css"
 
 import "@fontsource/raleway/500.css"
+// import "@fontsource/raleway/700.css"
 import "@fontsource/raleway/800.css"
 import "@fontsource/raleway/900.css"
 
@@ -46,10 +47,13 @@ h3{
   font-size: ${pxToRem(23)};
 }
 p{
+  
   font-family: Roboto;
   color:${colors.lightGrey};
   margin : 1rem 0 0;
-  font-size: ${pxToRem(19)}
+  font-size: ${pxToRem(19)};
+  align-self: flex-start;
+  text-align:left;
 }
 
 button{
@@ -135,51 +139,92 @@ button{
   }
   }
 
-  /*-------Listes-------*/
-  .listItems{
-    ${media.small`
-width:100%;
-display:flex;
-flex-direction: row;
-flex-wrap:wrap;
-justify-content:center;
-column-gap:${pxToRem(20)};
-row-gap:${pxToRem(40)};
-margin:${pxToRem(40)};
-div{
-margin:0 auto;
-max-width:${pxToRem(500)};
+  /*-------photo main page mobile only-------*/
+#HomeImage{
+  ${media.small`
+  display:none;
+  `}
 }
-`}
 
-  ${media.medium`
-justify-content:center;
-div{
-max-width:${pxToRem(350)};
-margin:0 auto;
-}
-`}
-
-
-${media.large`
-justify-content:space-between;
-`}
-
-
-${media.xlarge`
-div{
-margin:0;
-}
-`}
+#DepanneurMobile{
+    visibility:visible;
+    height:auto;
+  width:auto;
   }
+  #DepanneurDesktop{
+  visibility:hidden;
+  height:0;
+  width:0;
+}
 
+  ${media.large`
+  #DepanneurDesktop{
+    visibility:visible;
+    height:auto;
+    width:400px;
+  }
+  #DepanneurMobile {
+    visibility:hidden;
+  height:0;
+  width:0;
+  }
+  `}
 
-  /* ------photo page d'acceuil-------*/
-  #HomeImage{
+/*-------colonnes Responsive-------*/
+.colunmsContainer{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+
+  ${media.large`
+  flex-direction:row;
+  `}
+}
+
+.column{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+/*-----List-----*/
+.listItems{
     ${media.small`
-    display:none;
+          width:100%;
+          display:flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+          justify-content:center;
+          row-gap:${pxToRem(40)};
+          margin:${pxToRem(40)};
+          div{
+              margin:0 auto;
+              max-width:${pxToRem(500)};
+              }
+          `}
+    
+      ${media.medium`
+      justify-content:center;
+      div{
+        max-width:${pxToRem(350)};
+        margin:0 auto;
+        }
+      `}
+    
+    
+    ${media.large`
+    justify-content:space-between;
     `}
-  }
-`
+    
+    
+    ${media.xlarge`
+    div{
+    margin:0;
+    }
+    `}
+}
 
+`
 export default Global

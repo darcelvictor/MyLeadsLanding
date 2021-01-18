@@ -56,11 +56,13 @@ export default styled(Section1)`
     rgba(24, 145, 184, 0.51) 88%,
     rgba(255, 255, 255, 0.51)
   );
+  padding-top: ${pxToRem(80)};
   .maPrim {
     margin: ${pxToRem(30)} 0;
   }
   ${media.large`
   ${layout()}
+  padding-top: ${pxToRem(120)};
   background-image: none;
   display:grid;
   grid-template-columns: 50% 50%;

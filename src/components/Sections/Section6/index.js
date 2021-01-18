@@ -4,22 +4,23 @@ import Container from "../../Container"
 import CTA from "../../CTA"
 import MyH2 from "../../MyH2"
 import MaPrimRenov2 from "../../../images/svg/maPrimeRenov2.inline.svg"
+import styled from "styled-components"
 
-const Section6 = () => {
+import { media } from "../../../theme/helpers"
+
+const Section6 = ({ className }) => {
   return (
-    <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, rgba(255, 255, 255, 0.17), rgba(101, 194, 229, 0.23) 19%, rgba(101, 194, 229, 0.47) 85%, rgba(255, 255, 255, 0.51))",
-      }}
-    >
+    <div className={className}>
       <Container>
         <MyH2>Qu’est-ce que MaPrimeRenov’ ? </MyH2>
-        <MaPrimRenov2 />
-        <h3>
-          MaPrimeRénov’ est la principale aide de l’Etat pour la rénovation
-          énergétique.{" "}
-        </h3>
+        <div className="colunmsContainerS6">
+          <MaPrimRenov2 />
+
+          <h3>
+            MaPrimeRénov’ est la principale aide de l’Etat pour la rénovation
+            énergétique.{" "}
+          </h3>
+        </div>
         <p>
           Cette aide existe depuis le 1er janvier 2020, mais à compter du 1er
           janvier 2021, tous les propriétaires occupants modestes ou aisés,
@@ -49,13 +50,38 @@ const Section6 = () => {
           sont mieux financés et le montant de la prime est progressif afin de
           soutenir plus fortement les ménages qui en ont le plus besoin.
         </p>
-        <a className="link" href="https://www.maprimerenov.gouv.fr">
-          source : www.maprimerenov.gouv.fr
-        </a>
+        <p>
+          <b>source : www.maprimerenov.gouv.fr</b>
+        </p>
         <CTA fontSize={30}>Je souhaite tester mon éligibilité &#8594;</CTA>
       </Container>
     </div>
   )
 }
 
-export default Section6
+export default styled(Section6)`
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.17),
+    rgba(101, 194, 229, 0.23) 19%,
+    rgba(101, 194, 229, 0.47) 85%,
+    rgba(255, 255, 255, 0.51)
+  );
+
+  ${media.large`
+  background-image:none;
+  
+  .colunmsContainerS6 {
+    display:flex;
+    width:100%;
+    flex-direction:row-reverse;
+    align-items :center;
+    svg{
+      width:50%;
+    }
+    h3{
+      width:50%;
+    }
+  }
+  `}
+`

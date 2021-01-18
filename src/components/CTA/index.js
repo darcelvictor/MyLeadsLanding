@@ -29,6 +29,7 @@ export default styled(CTA)`
     line-height: 1.35;
     letter-spacing: normal;
     text-align: center;
+    align-self: center;
     color: ${colors.lightGrey};
   }
 `

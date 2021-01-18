@@ -24,6 +24,7 @@ export default styled(Footer1)`
   align-items: center;
   justify-content: center;
   text-align: center;
+  justify-self: center;
   p {
     font-family: Roboto;
     margin-top: 0;
@@ -34,6 +35,7 @@ export default styled(Footer1)`
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
+    align-self: center;
     color: #ffffff;
   }
   div {
