@@ -261,25 +261,36 @@ const MyForm = () => {
             </p>
           </Semi>
         </SemiContainer>
-        <p>
-          <Label>
-            Votre numéro de téléphone :<Accent>*</Accent>
-            <br />
-            <input
-              type="tel"
-              name="telephone"
-              onChange={handleChange}
-              required
-            />
-          </Label>
-        </p>
-        <p>
-          <Label>
-            Votre adresse e-mail :<Accent>*</Accent>
-            <br />
-            <input type="eMail" name="email" onChange={handleChange} required />
-          </Label>
-        </p>
+        <SemiContainer>
+          <Semi>
+            <p>
+              <Label>
+                Votre numéro de téléphone :<Accent>*</Accent>
+                <br />
+                <input
+                  type="tel"
+                  name="telephone"
+                  onChange={handleChange}
+                  required
+                />
+              </Label>
+            </p>
+          </Semi>
+          <Semi>
+            <p>
+              <Label>
+                Votre adresse e-mail :<Accent>*</Accent>
+                <br />
+                <input
+                  type="eMail"
+                  name="email"
+                  onChange={handleChange}
+                  required
+                />
+              </Label>
+            </p>
+          </Semi>
+        </SemiContainer>
         <Label className="rgpd">
           <input type="checkbox" name="rgpd" onChange={handleChange} required />
           <p>

@@ -62,6 +62,9 @@ export const Form = styled.form`
   justify-content: center;
   display: flex;
   flex-direction: column;
+  p {
+    width: 100%;
+  }
 `
 
 export const Label = styled.label`
