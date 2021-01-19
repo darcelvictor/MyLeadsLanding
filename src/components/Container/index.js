@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { layout } from "../../theme/helpers"
+import { layout, pxToRem } from "../../theme/helpers"
 
 const Container = styled.section`
   display: flex;
@@ -7,6 +7,8 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   ${layout()}
+  padding-top :${pxToRem(40)};
+  padding-bottom: ${pxToRem(40)};
 `
 
 export default Container

@@ -56,7 +56,7 @@ export default styled(Section1)`
     rgba(24, 145, 184, 0.51) 88%,
     rgba(255, 255, 255, 0.51)
   );
-  padding-top: ${pxToRem(80)};
+  padding-top: 0;
 
   .secondDiv {
     display: flex;
@@ -69,7 +69,7 @@ export default styled(Section1)`
   }
   ${media.large`
   ${layout()}
-  padding-top: ${pxToRem(90)};
+  padding-top: ${pxToRem(60)};
   background-image: none;
   display:grid;
   grid-template-columns: 47% 3% 50%;

@@ -5,7 +5,7 @@ import MyH2 from "../../MyH2"
 import Container from "../../Container/"
 import CheckList from "../../CheckList"
 
-import { pxToRem, colors } from "../../../theme/helpers"
+import { colors } from "../../../theme/helpers"
 
 import data from "../../../theme/data"
 

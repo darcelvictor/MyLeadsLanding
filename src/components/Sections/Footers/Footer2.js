@@ -23,6 +23,7 @@ export default styled(Footer2)`
   text-align: center;
   p,
   a {
+    align-self: center;
     margin: 0;
     text-decoration: none;
     font-family: Roboto;

@@ -4,11 +4,14 @@ import Container from "../../Container"
 import CTA from "../../CTA"
 import data from "../../../theme/data"
 import Depanneur from "../../../images/svg/depanneur.inline.svg"
-import { pxToRem } from "../../../theme/helpers"
+import { pxToRem, media } from "../../../theme/helpers"
+import GreenLine from "../../GreenLine"
+import styled from "styled-components"
 
-const Section2 = () => {
+const Section2 = ({ className }) => {
   return (
-    <Container>
+    <Container className={className}>
+      <GreenLine />
       <div className="listItems">
         {data.firstSection.map(feature => (
           <Item key={feature.id} txt={feature.text} image={feature.image} />
@@ -23,4 +26,12 @@ const Section2 = () => {
   )
 }
 
-export default Section2
+export default styled(Section2)`
+  .GreenLine {
+    display: none;
+  }
+  ${media.large`
+.GreenLine {
+  display:block;
+}`}
+`
