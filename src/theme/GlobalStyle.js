@@ -59,6 +59,7 @@ p{
 
 button{
   background-color:${colors.green};
+  border: 5px solid ${colors.green} !important;
   border-radius: ${pxToRem(32)};
   color:white;
   border:none;
@@ -68,6 +69,12 @@ button{
   font-size : ${pxToRem(24)};
   margin: 0 auto;
   text-align:center;
+  cursor:pointer;
+  :hover{
+    background-color:white;
+    color : ${colors.green};
+    border-color:red;
+  }
 }
 .link{
   text-decoration:none;

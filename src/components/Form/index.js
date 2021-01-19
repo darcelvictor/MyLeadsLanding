@@ -65,7 +65,7 @@ const MyForm = () => {
       <Form
         name="contact"
         method="post"
-        action="/thanks/"
+        action="/merci/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
