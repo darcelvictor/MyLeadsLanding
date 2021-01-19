@@ -299,7 +299,7 @@ const MyForm = () => {
             ma demande. Ces données peuvent êtres supprimées à ma demande.
           </p>
         </Label>
-        <button type="submit">Validé ma demande &#10003;</button>
+        <button type="submit">Valider ma demande &#10003;</button>
         <BoldGreenText>Gratuit et sans engagement</BoldGreenText>
         <LegalText>
           Vos informations sont strictement confidentielles et peuvent être
