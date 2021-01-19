@@ -57,19 +57,26 @@ export default styled(Section1)`
     rgba(255, 255, 255, 0.51)
   );
   padding-top: ${pxToRem(80)};
+
+  .secondDiv {
+    display: flex;
+    flex-direction: column;
+  }
   .maPrim {
     margin: ${pxToRem(30)} 0;
+    justify-self: center;
+    align-self: center;
   }
   ${media.large`
   ${layout()}
-  padding-top: ${pxToRem(120)};
+  padding-top: ${pxToRem(90)};
   background-image: none;
   display:grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 45% 10% 45%;
+  grid-template-columns: 47% 3% 50%;
+  grid-template-rows: 48% 4% 48%;
   
   #form{
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 4;
     justify-self: flex-end;
@@ -77,6 +84,7 @@ export default styled(Section1)`
   .firstDiv{
     grid-column-start: 1;
     grid-row-start: 1;
+    align-self: flex-start;
     *{
       text-align:left;
 
@@ -85,12 +93,14 @@ export default styled(Section1)`
   .secondDiv{
     grid-column-start: 1;
     grid-row-start: 3;
+    align-self:flex-start;
     *{
       text-align:left;
 
     }
     .maPrim {
     margin: 0 0 ${pxToRem(30)} 0;
+    align-self:flex-start;
   }
   }
   `}
