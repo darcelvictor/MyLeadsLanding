@@ -9,13 +9,14 @@ import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
-// import Header from "./header"
+import Header from "./header"
 
 import Global from "../theme/GlobalStyle"
 
 const Layout = ({ children }) => {
   return (
     <>
+      <Header />
       <Global />
       <main>{children}</main>
     </>

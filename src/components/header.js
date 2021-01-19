@@ -1,42 +1,50 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+//import PropTypes from "prop-types"
 import React from "react"
+import Icon from "../images/svg/icon.inline.svg"
+import styled from "styled-components"
+import { layout, media, pxToRem } from "../theme/helpers"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = ({ className }) => (
+  <header className={className}>
+    <div>
+      <Icon />
+      <p>Pour une installation réussie et sans souci !</p>
     </div>
   </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+export default styled(Header)`
+  display: flex;
+  ${layout}
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  div {
+    display: flex;
+    width: 100%;
+    margin: ${pxToRem(10)};
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      align-self: center;
+      font-size: ${pxToRem(18)};
+      margin-top: ${pxToRem(10)};
+    }
+  }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+  ${media.medium`
+  max-height: ${pxToRem(90)};
+  div {
+  flex-direction: row;
+  justify-content: flex-start;
+  p{
+    align-self:flex-end;
+    font-size: ${pxToRem(20)};
+    line-height: 1;
+  }
+  }
+  `}
+`
