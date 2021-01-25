@@ -18,7 +18,7 @@ export default styled(Item)`
   margin: ${pxToRem(5)};
   max-width: ${pxToRem(400)};
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: rgba(46, 182, 255, 0.09);

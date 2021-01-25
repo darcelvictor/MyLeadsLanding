@@ -158,11 +158,14 @@ button{
     visibility:visible;
     height:auto;
   width:auto;
+  margin:${pxToRem(15)};
+  max-width:90%;
   }
   #DepanneurDesktop{
   visibility:hidden;
   height:0;
   width:0;
+  margin:0;
 }
 
   ${media.large`
@@ -170,11 +173,14 @@ button{
     visibility:visible;
     height:auto;
     width:400px;
+    margin:${pxToRem(15)};
+    max-width:90%;
   }
   #DepanneurMobile {
     visibility:hidden;
   height:0;
   width:0;
+  margin:0;
   }
   `}
 

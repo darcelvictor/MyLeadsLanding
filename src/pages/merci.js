@@ -61,6 +61,8 @@ export default styled(Thanks)`
     }
     p {
       font-size: ${pxToRem(19)};
+      align-self: center;
+      text-align: center;
     }
   }
 

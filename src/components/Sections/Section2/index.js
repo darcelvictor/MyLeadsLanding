@@ -4,7 +4,7 @@ import Container from "../../Container"
 import CTA from "../../CTA"
 import data from "../../../theme/data"
 import Depanneur from "../../../images/svg/depanneur.inline.svg"
-import { pxToRem, media } from "../../../theme/helpers"
+import { media } from "../../../theme/helpers"
 import GreenLine from "../../GreenLine"
 import styled from "styled-components"
 
@@ -18,10 +18,7 @@ const Section2 = ({ className }) => {
         ))}
       </div>
       <CTA fontSize={23}>je test mon éligibilité</CTA>
-      <Depanneur
-        id="DepanneurMobile"
-        style={{ margin: pxToRem(15), maxWidth: "90%" }}
-      />
+      <Depanneur id="DepanneurMobile" />
     </Container>
   )
 }

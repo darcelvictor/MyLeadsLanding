@@ -6,20 +6,17 @@ import GreenLine from "../GreenLine"
 
 const Banner = ({ children, className }) => {
   return (
-    <BannerContainer className={className}>
-      {children}
-      <GreenLine className="GreenLine" />
-    </BannerContainer>
+    <>
+      <BannerContainer>{children}</BannerContainer>
+      <GreenLine className={className} />
+    </>
   )
 }
 
 export default styled(Banner)`
-  .GreenLine {
-    display: none;
-  }
+  display: none;
   ${media.large`
-  .GreenLine {
     display:block;
     margin: ${pxToRem(16)} 0;
-  }`}
+  `}
 `

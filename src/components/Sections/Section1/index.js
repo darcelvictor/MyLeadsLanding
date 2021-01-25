@@ -57,7 +57,6 @@ export default styled(Section1)`
     rgba(255, 255, 255, 0.51)
   );
   padding-top: 0;
-
   .secondDiv {
     display: flex;
     flex-direction: column;
