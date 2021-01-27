@@ -62,11 +62,8 @@ export default styled(ListNumberUnderlineItem)`
     align-self: center;
   }
   button {
-    font-family: Raleway;
-    font-size: ${pxToRem(22)};
-    font-weight: 800;
-    font-stretch: normal;
     text-transform: uppercase;
+    font-size: ${pxToRem(22)};
     margin-top: ${pxToRem(10)};
   }
 `
