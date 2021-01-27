@@ -7,10 +7,11 @@ const Footer1 = ({ className }) => {
   return (
     <div className={className}>
       <p>© 2021 mon-eco-habitat.fr - Tous droits réservés</p>
-      <div>
+      <p>
         <Link to="politique">Politique de confidentialité</Link>
+        {" - "}
         <Link to="mentions-legales">Mentions légales</Link>
-      </div>
+      </p>
     </div>
   )
 }
@@ -37,14 +38,9 @@ export default styled(Footer1)`
     text-align: center;
     align-self: center;
     color: #ffffff;
-  }
-  div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     a {
-      font-size: ${pxToRem(20)};
-      margin: 0 ${pxToRem(10)};
+      font-size: ${pxToRem(14)};
+      margin: 0;
       text-decoration: none;
       color: white;
       font-weight: normal;

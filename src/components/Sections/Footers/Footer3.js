@@ -23,7 +23,7 @@ const Footer3 = ({ className }) => {
         <br />
         <a href="https://conso.bloctel.fr/">https://conso.bloctel.fr/</a>
       </p>
-      <p>
+      <p id="tagline">
         Propulsé par <a href="https://myleads-agency.com/">MyLeads Agency</a>
       </p>
     </div>
@@ -43,7 +43,7 @@ export default styled(Footer3)`
   font-size: ${pxToRem(10)};
   p,
   a {
-    margin: ${pxToRem(10)};
+    margin: ${pxToRem(10)} 0;
     text-decoration: none;
     font-family: Roboto;
     font-size: ${pxToRem(10)};
@@ -54,11 +54,13 @@ export default styled(Footer3)`
     letter-spacing: normal;
     text-align: center;
     color: #bcbcbc;
+    align-self: center;
+  }
+  #tagline,
+  #tagline a {
+    font-size: ${pxToRem(14)};
   }
   ${media.small`
   font-size: ${pxToRem(14)};
-  `}
-  ${media.small`
-  font-size: ${pxToRem(17)};
   `}
 `

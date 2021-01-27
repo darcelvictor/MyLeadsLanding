@@ -16,7 +16,6 @@ import {
   Section5,
   Section6,
 } from "../components/Sections"
-import { Footer1, Footer2 } from "../components/Sections/Footers"
 import Container from "../components/Container"
 
 const IndexPage = () => (
@@ -38,10 +37,6 @@ const IndexPage = () => (
     <Container>
       <MaPrimRenov style={{ margin: "70 auto" }} />
     </Container>
-    <footer>
-      <Footer1 />
-      <Footer2 />
-    </footer>
   </Layout>
 )
 

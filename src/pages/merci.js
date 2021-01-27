@@ -11,7 +11,6 @@ import Check from "../images/svg/check-thanks.inline.svg"
 import MaPrim from "../images/svg/maPrimRenov.inline.svg"
 
 import { pxToRem, colors, layout, media } from "../theme/helpers"
-import { Footer1, Footer3 } from "../components/Sections"
 
 const Thanks = ({ className }) => (
   <Layout>
@@ -25,10 +24,6 @@ const Thanks = ({ className }) => (
         <MaPrim style={{ marginTop: pxToRem(40) }} />
       </div>
     </Container>
-    <footer>
-      <Footer1 />
-      <Footer3 />
-    </footer>
   </Layout>
 )
 

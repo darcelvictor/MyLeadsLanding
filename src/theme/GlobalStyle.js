@@ -5,13 +5,13 @@ import "sanitize.css"
 import "sanitize.css/forms.css"
 import "sanitize.css/typography.css"
 
-import "@fontsource/raleway/500.css"
+import "@fontsource/raleway/latin-500.css"
 // import "@fontsource/raleway/700.css"
-import "@fontsource/raleway/800.css"
-import "@fontsource/raleway/900.css"
+import "@fontsource/raleway/latin-800.css"
+import "@fontsource/raleway/latin-900.css"
 
-import "@fontsource/roboto/300.css"
-import "@fontsource/roboto/400.css"
+import "@fontsource/roboto/latin-300.css"
+import "@fontsource/roboto/latin-400.css"
 
 // font fro Pre Prod
 import "@fontsource/raleway/100.css"
