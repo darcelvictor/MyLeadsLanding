@@ -60,6 +60,10 @@ export default styled(Section1)`
   .secondDiv {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    * {
+      align-self: center;
+    }
   }
   .maPrim {
     margin: ${pxToRem(30)} 0;
@@ -92,10 +96,10 @@ export default styled(Section1)`
   .secondDiv{
     grid-column-start: 1;
     grid-row-start: 3;
-    align-self:flex-start;
+    align-self:flex-end;
     *{
       text-align:left;
-
+      align-self: flex-start;
     }
     .maPrim {
     margin: 0 0 ${pxToRem(30)} 0;

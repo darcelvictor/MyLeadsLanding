@@ -67,13 +67,16 @@ export default styled(Section6)`
     rgba(101, 194, 229, 0.47) 85%,
     rgba(255, 255, 255, 0.51)
   );
-
+  .colunmsContainerS6 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
   ${media.large`
   background-image:none;
   
   .colunmsContainerS6 {
-    display:flex;
-    width:100%;
     flex-direction:row-reverse;
     align-items :center;
     svg{

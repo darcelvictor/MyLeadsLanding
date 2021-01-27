@@ -59,13 +59,13 @@ p{
 
 button{
   background-color:${colors.green};
-  border: 5px solid ${colors.green} !important;
+  border: 4px solid ${colors.green} !important;
   border-radius: ${pxToRem(32)};
   color:white;
   border:none;
   padding : ${pxToRem(10)} ${pxToRem(15)};
   font-family:Raleway;
-  font-weight:800;
+  font-weight:500;
   font-size : ${pxToRem(24)};
   margin: 0 auto;
   text-align:center;

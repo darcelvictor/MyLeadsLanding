@@ -8,8 +8,11 @@ export const MyUnorganizedList = styled.ul`
     margin-bottom: ${pxToRem(13.6)};
     h3 {
       font-size: ${pxToRem(18)};
+      margin-bottom: ${pxToRem(1)};
     }
     p {
+      margin-top: ${pxToRem(1)};
+      margin-bottom: ${pxToRem(16)};
       font-size: 17px;
     }
   }

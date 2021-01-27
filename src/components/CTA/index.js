@@ -35,14 +35,5 @@ export default styled(CTA)`
 `
 export const CTAButton = styled.button`
   font-size: ${props => pxToRem(props.fontSize)};
-  font-family: Raleway;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.15;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  padding: ${pxToRem(10)} ${pxToRem(20)};
   text-transform: uppercase;
 `
