@@ -18,11 +18,16 @@ const Header = ({ className }) => (
 
 export default styled(Header)`
   display: flex;
-  ${layout}
+  width: 100%;
   justify-content: center;
   align-items: center;
   width: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   div {
+    ${layout}
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     a {
       display: flex;
@@ -43,6 +48,7 @@ export default styled(Header)`
   ${media.medium`
   max-height: ${pxToRem(90)};
   div {
+    justify-content: flex-start;
     a{
     flex-direction: row;
     justify-content: flex-start;
