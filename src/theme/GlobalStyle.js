@@ -13,6 +13,19 @@ import "@fontsource/raleway/900.css"
 import "@fontsource/roboto/300.css"
 import "@fontsource/roboto/400.css"
 
+// font fro Pre Prod
+import "@fontsource/raleway/100.css"
+import "@fontsource/raleway/200.css"
+import "@fontsource/raleway/300.css"
+import "@fontsource/raleway/400.css"
+import "@fontsource/raleway/600.css"
+import "@fontsource/raleway/700.css"
+
+import "@fontsource/roboto/100.css"
+import "@fontsource/roboto/500.css"
+import "@fontsource/roboto/700.css"
+import "@fontsource/roboto/900.css"
+
 const Global = createGlobalStyle`
 body {
   font-size:16px;
