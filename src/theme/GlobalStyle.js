@@ -84,6 +84,9 @@ button{
   font-size : 1.2rem;
   margin: 0 auto;
   text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   cursor:pointer;
   
   ${media.small`

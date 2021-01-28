@@ -61,9 +61,4 @@ export default styled(ListNumberUnderlineItem)`
     text-align: center;
     align-self: center;
   }
-  button {
-    text-transform: uppercase;
-    font-size: ${pxToRem(22)};
-    margin-top: ${pxToRem(10)};
-  }
 `
