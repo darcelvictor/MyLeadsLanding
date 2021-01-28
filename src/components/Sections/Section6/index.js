@@ -15,7 +15,6 @@ const Section6 = ({ className }) => {
         <MyH2>Qu’est-ce que MaPrimeRenov’ ? </MyH2>
         <div className="colunmsContainerS6">
           <MaPrimRenov2 />
-
           <h3>
             MaPrimeRénov’ est la principale aide de l’Etat pour la rénovation
             énergétique.{" "}
@@ -78,12 +77,12 @@ export default styled(Section6)`
   
   .colunmsContainerS6 {
     flex-direction:row-reverse;
-    align-items :center;
     svg{
       width:50%;
     }
     h3{
-      width:50%;
+      min-width:50%;
+      justify-self:flex-start;
     }
   }
   `}
