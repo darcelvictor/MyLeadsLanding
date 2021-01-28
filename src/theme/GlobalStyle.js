@@ -7,6 +7,7 @@ import "sanitize.css/typography.css"
 
 import "@fontsource/raleway/latin-500.css"
 // import "@fontsource/raleway/700.css"
+import "@fontsource/raleway/latin-600.css"
 import "@fontsource/raleway/latin-800.css"
 import "@fontsource/raleway/latin-900.css"
 
@@ -37,7 +38,7 @@ footer{
 }
 h1{
   font-size: ${pxToRem(24)};
-  font-weight: 900;
+  font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.21;
@@ -76,9 +77,9 @@ button{
   border-radius: ${pxToRem(32)};
   color:white;
   border:none;
-  padding : ${pxToRem(10)} ${pxToRem(15)};
+  padding : 0.35rem 0.9375rem;
   font-family:Raleway;
-  font-weight:500;
+  font-weight:600;
   font-size : ${pxToRem(24)};
   margin: 0 auto;
   text-align:center;
