@@ -32,6 +32,7 @@ export default styled(Thanks)`
   align-content: center;
   min-height: 90vh;
   #Thanks {
+    margin: ${pxToRem(20)} auto;
     border-radius: 53px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
     display: flex;
@@ -66,10 +67,10 @@ export default styled(Thanks)`
    padding: ${pxToRem(50)};
    max-width: 95%;
    h1{
-    font-size: ${pxToRem(38)};
+    font-size:  1.7rem;
    }
    p {
-      font-size: ${pxToRem(27)};
+      font-size: 1.2rem;
     }
    }
   `}

@@ -27,7 +27,7 @@ export const FormHeader = styled.h2`
   padding: ${pxToRem(20)} ${pxToRem(15)};
   margin: 0 0;
   font-family: Raleway;
-  font-size: ${pxToRem(29)};
+  font-size: ${pxToRem(25)};
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -37,6 +37,7 @@ export const FormHeader = styled.h2`
   .myBr{
     display:none;
   }
+  font-size: ${pxToRem(29)};
   `}
 `
 export const FormPresentation = styled.p`
@@ -112,13 +113,14 @@ export const SemiContainerMed = styled.div`
 export const SemiMed = styled.div`
   width: 100%;
   ${media.medium`
-  width:48%
+  width:48%;
   `}
 `
+
 export const BoldGreenText = styled.p`
   margin: ${pxToRem(10)};
   font-family: Raleway;
-  font-size: ${pxToRem(23)};
+  font-size: ${pxToRem(19)};
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -126,6 +128,9 @@ export const BoldGreenText = styled.p`
   letter-spacing: normal;
   text-align: center;
   color: #0fd344;
+  ${media.small`
+font-size:${pxToRem(23)};
+`}
 `
 export const LegalText = styled.p`
   margin: ${pxToRem(15)} 0 0;

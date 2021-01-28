@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { pxToRem, colors } from "../../../theme/helpers"
+import { pxToRem, colors, media } from "../../../theme/helpers"
 
 export const FirstP = styled.p`
   font-family: Roboto;
-  font-size: ${pxToRem(21)};
+  font-size: 1.2rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -11,4 +11,7 @@ export const FirstP = styled.p`
   letter-spacing: normal;
   text-align: center;
   color: ${colors.grey};
+  ${media.small`
+  font-size: ${pxToRem(21)};
+  `}
 `

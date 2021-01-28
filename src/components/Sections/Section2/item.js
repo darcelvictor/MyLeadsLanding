@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { pxToRem, colors } from "../../../theme/helpers"
+import { pxToRem, colors, media } from "../../../theme/helpers"
 
 const Item = ({ className, txt, image }) => {
   return (
@@ -15,7 +15,7 @@ export default styled(Item)`
   border-radius: ${pxToRem(30)};
   min-height: ${pxToRem(300)};
   padding: ${pxToRem(30)};
-  margin: ${pxToRem(5)};
+  margin: ${pxToRem(12)};
   max-width: ${pxToRem(400)};
   display: flex;
   justify-content: flex-start;
@@ -28,7 +28,7 @@ export default styled(Item)`
   }
   p {
     font-family: Raleway;
-    font-size: ${pxToRem(23)};
+    font-size: 1.2rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -36,5 +36,8 @@ export default styled(Item)`
     letter-spacing: normal;
     text-align: center;
     color: ${colors.blue};
+    ${media.small`
+    font-size: 1.4rem;
+    `}
   }
 `

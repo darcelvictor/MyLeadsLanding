@@ -22,7 +22,7 @@ export default styled(ListNumberUnderlineItem)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: ${pxToRem(40)};
+  margin: ${pxToRem(20)};
   background-color: white;
   padding: ${pxToRem(15)};
   border-radius: ${pxToRem(31)};

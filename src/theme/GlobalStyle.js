@@ -81,10 +81,15 @@ button{
   padding : 0.35rem 0.9375rem;
   font-family:Raleway;
   font-weight:600;
-  font-size : ${pxToRem(24)};
+  font-size : 1.2rem;
   margin: 0 auto;
   text-align:center;
   cursor:pointer;
+  
+  ${media.small`
+  font-size : 1.5rem;
+  `}
+
   :hover{
     background-color:white;
     color : ${colors.green};
