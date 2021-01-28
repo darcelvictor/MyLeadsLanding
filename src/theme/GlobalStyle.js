@@ -6,26 +6,26 @@ import "sanitize.css/forms.css"
 import "sanitize.css/typography.css"
 
 import "@fontsource/raleway/latin-500.css"
-// import "@fontsource/raleway/700.css"
+import "@fontsource/raleway/700.css"
 import "@fontsource/raleway/latin-600.css"
 import "@fontsource/raleway/latin-800.css"
-import "@fontsource/raleway/latin-900.css"
+//import "@fontsource/raleway/latin-900.css"
 
 import "@fontsource/roboto/latin-300.css"
 import "@fontsource/roboto/latin-400.css"
 
 // font fro Pre Prod
-import "@fontsource/raleway/100.css"
-import "@fontsource/raleway/200.css"
-import "@fontsource/raleway/300.css"
-import "@fontsource/raleway/400.css"
-import "@fontsource/raleway/600.css"
-import "@fontsource/raleway/700.css"
+// import "@fontsource/raleway/100.css"
+// import "@fontsource/raleway/200.css"
+// import "@fontsource/raleway/300.css"
+// import "@fontsource/raleway/400.css"
+// import "@fontsource/raleway/600.css"
+// import "@fontsource/raleway/700.css"
 
-import "@fontsource/roboto/100.css"
-import "@fontsource/roboto/500.css"
-import "@fontsource/roboto/700.css"
-import "@fontsource/roboto/900.css"
+// import "@fontsource/roboto/100.css"
+// import "@fontsource/roboto/500.css"
+// import "@fontsource/roboto/700.css"
+// import "@fontsource/roboto/900.css"
 
 const Global = createGlobalStyle`
 body {
@@ -80,7 +80,7 @@ button{
   border:none;
   padding : 0.35rem 0.9375rem;
   font-family:Raleway;
-  font-weight:600;
+  font-weight: 600;
   font-size : 1.2rem;
   margin: 0 auto;
   text-align:center;
@@ -162,7 +162,7 @@ button{
   text-align: left;
   color: #07448e;
     span{
-      font-weight:bold;
+      font-weight:700;
     }
   }
   }

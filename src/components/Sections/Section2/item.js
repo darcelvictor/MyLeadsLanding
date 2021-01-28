@@ -29,7 +29,7 @@ export default styled(Item)`
   p {
     font-family: Raleway;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.17;

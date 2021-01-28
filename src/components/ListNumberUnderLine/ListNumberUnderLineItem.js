@@ -29,7 +29,7 @@ export default styled(ListNumberUnderlineItem)`
   p:first-of-type {
     font-family: Arial;
     font-size: ${pxToRem(50)};
-    font-weight: bold;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.16;
@@ -42,7 +42,7 @@ export default styled(ListNumberUnderlineItem)`
   h3 {
     font-family: Raleway;
     font-size: ${pxToRem(23)};
-    font-weight: bold;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.17;
