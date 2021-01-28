@@ -17,7 +17,7 @@ const Section2 = ({ className }) => {
           <Item key={feature.id} txt={feature.text} image={feature.image} />
         ))}
       </div>
-      <CTA fontSize={23}>je test mon éligibilité</CTA>
+      <CTA>je test mon éligibilité</CTA>
       <Depanneur id="DepanneurMobile" />
     </Container>
   )

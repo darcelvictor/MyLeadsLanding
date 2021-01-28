@@ -29,7 +29,7 @@ const Section3 = () => {
             </div>
             <div className="column">
               <Depanneur id="DepanneurDesktop" />
-              <CTA fontSize={27}>TEST D’éligibilité &#8593;</CTA>
+              <CTA>TEST D’éligibilité &#8593;</CTA>
             </div>
           </div>
         </Container>
