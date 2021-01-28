@@ -67,7 +67,7 @@ p{
   font-family: Roboto;
   color:${colors.lightGrey};
   margin : 1rem 0 0;
-  font-size: ${pxToRem(19)};
+  font-size: ${pxToRem(16)};
   align-self: flex-start;
   text-align:left;
 }

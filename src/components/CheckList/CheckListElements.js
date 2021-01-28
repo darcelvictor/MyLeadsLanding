@@ -13,7 +13,6 @@ export const MyUnorganizedList = styled.ul`
     p {
       margin-top: ${pxToRem(1)};
       margin-bottom: ${pxToRem(16)};
-      font-size: 17px;
     }
   }
 `

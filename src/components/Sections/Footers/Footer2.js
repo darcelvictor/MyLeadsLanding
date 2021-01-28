@@ -27,7 +27,7 @@ export default styled(Footer2)`
     margin: 0;
     text-decoration: none;
     font-family: Roboto;
-    font-size: ${pxToRem(17)};
+    font-size: ${pxToRem(16)};
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
