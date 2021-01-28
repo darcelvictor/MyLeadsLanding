@@ -118,7 +118,7 @@ export const SemiMed = styled.div`
 `
 
 export const BoldGreenText = styled.p`
-  margin: ${pxToRem(10)};
+  margin: ${pxToRem(10)} 0;
   font-family: Raleway;
   font-size: ${pxToRem(19)};
   font-weight: 800;

@@ -18,6 +18,7 @@ export default styled(CTA)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  vertical-align: center;
   margin: ${pxToRem(24)};
   p {
     margin-top: ${pxToRem(10)};

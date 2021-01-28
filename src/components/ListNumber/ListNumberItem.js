@@ -17,7 +17,7 @@ export default styled(ListNumberItem)`
   grid-gap: ${pxToRem(20)};
   grid-template-columns: ${pxToRem(50)} auto;
   grid-template-rows: ${pxToRem(50)} auto;
-  margin: ${pxToRem(40)} 0;
+  margin: ${pxToRem(40)} ${pxToRem(20)};
 
   p:first-of-type {
     box-shadow: -4px 4px 6px 0 rgba(7, 68, 142, 0.51);
@@ -33,6 +33,7 @@ export default styled(ListNumberItem)`
     justify-content: center;
   }
   h3 {
+    max-width: 90%;
     margin: 0;
     font-family: Raleway;
     font-size: ${pxToRem(23)};
