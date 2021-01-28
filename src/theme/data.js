@@ -35,14 +35,14 @@ export default {
     },
     {
       id: 23,
-      title:
-        "Un seul appareil pour tous vos besoins : chauffage en hiver et climatisation en été",
+      title: "Augmentez la valeur de votre maison",
       text:
         "En installant une pompe à chaleur vous améliorez la classe énergétique de votre maison et vous augmentez sa valeur à la revente.",
     },
     {
       id: 24,
-      title: "Une pose simple et rapide",
+      title:
+        "Un seul appareil pour tous vos besoins : chauffage en hiver et climatisation en été",
       text:
         "Le système va produire le chauffage et l’eau chaude et pourra également rafraichir vos pièces en période estivale.",
     },

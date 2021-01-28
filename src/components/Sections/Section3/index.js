@@ -18,7 +18,7 @@ const Section3 = () => {
     <>
       <div style={{ backgroundColor: colors.BKgrey }}>
         <Container>
-          <MyH2>Comment fonctionne une pompe à chaleur ?</MyH2>
+          <MyH2>Pourquoi passez à la pompe à chaleur en 2021 ?</MyH2>
           <div className="colunmsContainer">
             <div className="column">
               <CheckList

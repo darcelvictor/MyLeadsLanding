@@ -21,7 +21,7 @@ const Footer3 = ({ className }) => {
         vous informons de l’existence de la liste d’opposition au démarchage
         téléphonique « Bloctel », sur laquelle vous pouvez vous inscrire ici :
         <br />
-        <a href="https://conso.bloctel.fr/">https://conso.bloctel.fr/</a>
+        https://conso.bloctel.fr/
       </p>
       <p id="tagline">
         Propulsé par <a href="https://myleads-agency.com/">MyLeads Agency</a>

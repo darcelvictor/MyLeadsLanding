@@ -53,7 +53,7 @@ const Section6 = ({ className }) => {
         <p>
           <b>source : www.maprimerenov.gouv.fr</b>
         </p>
-        <CTA fontSize={30}>Je souhaite tester mon éligibilité &#8594;</CTA>
+        <CTA fontSize={24}>Je veux tester mon éligibilité</CTA>
       </Container>
     </div>
   )

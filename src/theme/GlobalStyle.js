@@ -60,6 +60,7 @@ h2{
 h3{
   color:${colors.blue};
   font-size: ${pxToRem(23)};
+  max-width:${pxToRem(600)};
 }
 p{
   

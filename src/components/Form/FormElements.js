@@ -33,8 +33,8 @@ export const FormHeader = styled.h2`
   font-style: normal;
   text-transform: none !important;
   line-height: 1.17;
-  ${media.large`
-  br{
+  ${media.medium`
+  .myBr{
     display:none;
   }
   `}
