@@ -21,8 +21,8 @@ module.exports = {
         name: `Mon-eco-habitat`,
         short_name: `eco-habitat`,
         start_url: `/`,
-        background_color: `#0fd344`,
-        theme_color: `#0fd344`,
+        background_color: `#07448e`,
+        theme_color: `#07448e`,
         display: `minimal-ui`,
         icon: `src/images/favicon-mon-eco-habitat.png`, // This path is relative to the root of the site.
       },
