@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Myleads Ad's Builder`,
-    description: `Make landing page easy, fast`,
+    title: `Mon eco habitat`,
+    description: `Bénéficiez de 20000€ d’aides pour l’installation de votre pompe à chaleur`,
     author: `@MyLeads`,
   },
   plugins: [
