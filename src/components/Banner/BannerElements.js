@@ -11,6 +11,7 @@ export const BannerContainer = styled.p`
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin: 0;
   ${media.small`
   font-size: ${pxToRem(32)};
   `}
