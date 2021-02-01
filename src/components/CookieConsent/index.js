@@ -4,6 +4,8 @@ import { useLocation } from "@reach/router" // this helps tracking the location
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 
 const CookieBanne = () => {
+  const location = useLocation()
+
   return (
     <CookieConsent
       debug={true}
@@ -12,10 +14,10 @@ const CookieBanne = () => {
       declineButtonText="Decline"
       cookieName="gatsby-gdpr-google-tagmanager"
       style={{ background: "green" }}
-      onAccept={() => initializeAndTrack(useLocation)}
+      onAccept={() => initializeAndTrack(location)}
       enableDeclineButton
       onDecline={() => {
-        alert("nay!")
+        alert("cooki non acceptés!")
       }}
     >
       This site uses cookies ... super Cooki

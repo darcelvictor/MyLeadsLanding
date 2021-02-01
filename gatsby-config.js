@@ -43,6 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
+        defaultDataLayer: { platform: "gatsby" },
         googleTagManager: {
           trackingId: "GTM-WM7TLQJ", // leave empty if you want to disable the tracker
           cookieName: "gatsby-gdpr-google-tagmanager", // default
