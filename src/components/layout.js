@@ -13,7 +13,7 @@ import Header from "./header"
 import Footer from "./Sections/Footers"
 
 import Global from "../theme/GlobalStyle"
-import CookieBanne from "react-cookie-consent"
+import CookieBanne from "../components/CookieConsent"
 
 const Layout = ({ children }) => {
   return (
