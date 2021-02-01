@@ -20,7 +20,7 @@ const CookieBanne = () => {
         alert("cookies non acceptés!")
       }}
     >
-      This site uses cookies ...
+      GOOGLE TAG MARCHE JUSTE LE DESIGN A REVOIR
     </CookieConsent>
   )
 }
