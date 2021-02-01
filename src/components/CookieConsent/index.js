@@ -17,10 +17,10 @@ const CookieBanne = () => {
       onAccept={() => initializeAndTrack(location)}
       enableDeclineButton
       onDecline={() => {
-        alert("cooki non acceptés!")
+        alert("cookies non acceptés!")
       }}
     >
-      This site uses cookies ... super Cooki
+      This site uses cookies ...
     </CookieConsent>
   )
 }
