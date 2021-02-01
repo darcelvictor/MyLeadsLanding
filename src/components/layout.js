@@ -13,6 +13,7 @@ import Header from "./header"
 import Footer from "./Sections/Footers"
 
 import Global from "../theme/GlobalStyle"
+import CookieBanne from "react-cookie-consent"
 
 const Layout = ({ children }) => {
   return (
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
       <Global />
       <main>{children}</main>
       <Footer />
+      <CookieBanne />
     </>
   )
 }
