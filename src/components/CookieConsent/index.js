@@ -16,7 +16,7 @@ const CookieBanne = () => {
         alert("nay!")
       }}
     >
-      This site uses cookies ...
+      This site uses cookies ... super Cooki
     </CookieConsent>
   )
 }
