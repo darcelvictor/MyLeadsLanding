@@ -49,8 +49,8 @@ export default styled(CookieBanne)`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: ${pxToRem(15)};
     #DeclineButton {
-      padding-top: ${pxToRem(15)};
       background-color: transparent;
       border: none;
       :hover {
