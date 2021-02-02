@@ -74,10 +74,9 @@ p{
 
 button{
   background-color:${colors.green};
-  border: 4px solid ${colors.green} !important;
+  border: 4px solid ${colors.green};
   border-radius: ${pxToRem(32)};
   color:white;
-  border:none;
   padding : 0.35rem 0.9375rem;
   font-family:Raleway;
   font-weight: 600;
@@ -94,7 +93,7 @@ button{
   `}
 
   :hover{
-    background-color:white;
+    background-color:transparent;
     color : ${colors.green};
     border-color:red;
   }
