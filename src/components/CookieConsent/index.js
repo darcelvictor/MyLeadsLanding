@@ -20,9 +20,6 @@ const CookieBanne = ({ className }) => {
       cookieName="gatsby-gdpr-google-tagmanager"
       onAccept={() => initializeAndTrack(location)}
       enableDeclineButton
-      onDecline={() => {
-        alert("cookies non acceptés!")
-      }}
     >
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ut quas
       tempore numquam eaque deserunt pariatur autem placeat velit cum iste. Quod
@@ -47,13 +44,13 @@ export default styled(CookieBanne)`
   background-color: ${colors.blue};
   color: white;
   border-radius: ${pxToRem(15)} ${pxToRem(15)} 0 0;
-  animation: bounce 0.7s ease;
   .CCbuttons {
     ${layout()}
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     #DeclineButton {
+      padding-top: ${pxToRem(15)};
       background-color: transparent;
       border: none;
       :hover {
