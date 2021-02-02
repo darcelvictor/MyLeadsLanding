@@ -95,7 +95,7 @@ button{
   :hover{
     background-color:transparent;
     color : ${colors.green};
-    border-color:red;
+    border-color: ${colors.green};
   }
 }
 .link{

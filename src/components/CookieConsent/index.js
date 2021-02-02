@@ -47,6 +47,7 @@ export default styled(CookieBanne)`
   background-color: ${colors.blue};
   color: white;
   border-radius: ${pxToRem(15)} ${pxToRem(15)} 0 0;
+  animation: bounce 0.7s ease;
   .CCbuttons {
     ${layout()}
     display: flex;
